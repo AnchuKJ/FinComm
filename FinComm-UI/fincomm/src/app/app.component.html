@@ -14,43 +14,43 @@
         </div>
         <div>
           <a routerLink="/community" routerLinkActive="active">
-            <mat-icon>dashboard</mat-icon>
+            <mat-icon>groups</mat-icon>
             Community
           </a>
         </div>
         <div>
           <a routerLink="/transaction" routerLinkActive="active">
-            <mat-icon>dashboard</mat-icon>
+            <mat-icon>account_balance</mat-icon>
             Transactions
           </a>
         </div>
         <div>
           <a routerLink="/invoices" routerLinkActive="active">
-            <mat-icon>dashboard</mat-icon>
+            <mat-icon>receipt</mat-icon>
             Invoices
           </a>
         </div>
         <div>
           <a routerLink="/payments" routerLinkActive="active">
-            <mat-icon>dashboard</mat-icon>
+            <mat-icon>payment</mat-icon>
             Payments
           </a>
         </div>
         <div>
           <a routerLink="/analytics" routerLinkActive="active">
-            <mat-icon>dashboard</mat-icon>
+            <mat-icon>analytics</mat-icon>
             Analytics
           </a>
         </div>
         <div>
           <a routerLink="/settings" routerLinkActive="active">
-            <mat-icon>dashboard</mat-icon>
+            <mat-icon>settings</mat-icon>
             Settings
           </a>
         </div>
         <div>
           <a routerLink="/contactus" routerLinkActive="active">
-            <mat-icon>dashboard</mat-icon>
+            <mat-icon>contacts</mat-icon>
             Contact Us
           </a>
         </div>
@@ -67,7 +67,17 @@
       </div>
     </div>
     <div class="maindiv">
-      <router-outlet></router-outlet>
+      <router-outlet>
+      </router-outlet>
+        <div>
+          <div class="welcomediv">
+            Welcome Back
+          </div>
+          <div class="communitydiv" style="width:1000px;">
+             NEW COMMUNITY
+          </div>     
+        </div>
+      
     </div>
   </div>
 </div>

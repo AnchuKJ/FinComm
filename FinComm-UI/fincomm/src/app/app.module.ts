@@ -14,6 +14,7 @@ import { CommunitydetailsComponent } from './communitydetails/communitydetails.c
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatInputModule} from '@angular/material/input';
 
+
 @NgModule({
   declarations: [
     AppComponent,

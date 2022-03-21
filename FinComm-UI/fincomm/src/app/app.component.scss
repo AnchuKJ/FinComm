@@ -62,12 +62,47 @@
                }
                 .mat-form-field-infix{
                     border: 1px solid;
+                    border-radius: 90px;
                 }
+                
             }
         }
 
         .maindiv{
+            .welcomediv{
+                position: absolute;
+                width: 160px;
+                height: 31px;
+                left: 408px;
+                top: 118px;
 
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600 bold;
+                font-size: 22px;
+                line-height: 143%;
+                letter-spacing: -0.03em;
+                color: #8777E0;
+            }
+            .communitydiv{
+                position: absolute;
+                left: 40px;
+                right: 0%;
+                top: 22.22%;
+                bottom: 22.22%;
+
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 143%;
+                /* identical to box height, or 20px */
+
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+
+                color: #FFFFFF;
+            }
         }
     }
 }
