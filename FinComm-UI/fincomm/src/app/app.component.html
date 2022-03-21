@@ -1,83 +1,86 @@
-
 <div fxLayout="row" class="maindiv">
   <div class="leftdiv">
-    <div fxLayout="column" class="logodiv">
-      <div class="titlediv">Fin<b>Comm</b></div>
-      <div class="logoimgdiv"><img src="assets\logo.png"></div>
-    </div>
-    <div fxLayout="column" class="menudiv">      
-        <div>
-          <a routerLink="/dashboard" routerLinkActive="active">
-            <mat-icon>dashboard</mat-icon>
-            Dashboard
-          </a>
-        </div>
-        <div>
-          <a routerLink="/community" routerLinkActive="active">
-            <mat-icon>groups</mat-icon>
-            Community
-          </a>
-        </div>
-        <div>
-          <a routerLink="/transaction" routerLinkActive="active">
-            <mat-icon>account_balance</mat-icon>
-            Transactions
-          </a>
-        </div>
-        <div>
-          <a routerLink="/invoices" routerLinkActive="active">
-            <mat-icon>receipt</mat-icon>
-            Invoices
-          </a>
-        </div>
-        <div>
-          <a routerLink="/payments" routerLinkActive="active">
-            <mat-icon>payment</mat-icon>
-            Payments
-          </a>
-        </div>
-        <div>
-          <a routerLink="/analytics" routerLinkActive="active">
-            <mat-icon>analytics</mat-icon>
-            Analytics
-          </a>
-        </div>
-        <div>
-          <a routerLink="/settings" routerLinkActive="active">
-            <mat-icon>settings</mat-icon>
-            Settings
-          </a>
-        </div>
-        <div>
-          <a routerLink="/contactus" routerLinkActive="active">
-            <mat-icon>contacts</mat-icon>
-            Contact Us
-          </a>
-        </div>
-    </div>
+      <div fxLayout="column" class="logodiv">
+          <div class="titlediv">Fin<b>Comm</b></div>
+          <div class="logoimgdiv"><img src="assets\logo.png"></div>
+      </div>
+      <div fxLayout="column" class="menudiv">
+          <div>
+              <a routerLink="/dashboard" routerLinkActive="active">
+                  <mat-icon>dashboard</mat-icon>
+                  Dashboard
+              </a>
+          </div>
+          <div>
+              <a routerLink="/community" routerLinkActive="active">
+                  <mat-icon>groups</mat-icon>
+                  Community
+              </a>
+          </div>
+          <div>
+              <a routerLink="/transaction" routerLinkActive="active">
+                  <mat-icon>account_balance</mat-icon>
+                  Transactions
+              </a>
+          </div>
+          <div>
+              <a routerLink="/invoices" routerLinkActive="active">
+                  <mat-icon>receipt</mat-icon>
+                  Invoices
+              </a>
+          </div>
+          <div>
+              <a routerLink="/payments" routerLinkActive="active">
+                  <mat-icon>payment</mat-icon>
+                  Payments
+              </a>
+          </div>
+          <div>
+              <a routerLink="/analytics" routerLinkActive="active">
+                  <mat-icon>analytics</mat-icon>
+                  Analytics
+              </a>
+          </div>
+          <div>
+              <a routerLink="/settings" routerLinkActive="active">
+                  <mat-icon>settings</mat-icon>
+                  Settings
+              </a>
+          </div>
+          <div>
+              <a routerLink="/contactus" routerLinkActive="active">
+                  <mat-icon>contacts</mat-icon>
+                  Contact Us
+              </a>
+          </div>
+      </div>
   </div>
   <div class="rightdiv">
-    <div fxLayout="row" class="headerdiv">
-      <div fxFlex="60" class="searchdiv">
-        <mat-form-field appearance="outline">
-          <mat-label>Search</mat-label>
-          <input type="email" matInput placeholder="Search">
-          <mat-icon matSuffix>search</mat-icon>
-        </mat-form-field>
-      </div>
-    </div>
-    <div class="maindiv">
-      <router-outlet>
-      </router-outlet>
-        <div>
-          <div class="welcomediv">
-            Welcome Back
+      <div fxLayout="row" class="headerdiv">
+          <div fxFlex="60" class="searchdiv">
+              <mat-form-field appearance="outline">
+                  <mat-label>Search</mat-label>
+                  <input type="email" matInput placeholder="Search">
+                  <mat-icon matSuffix>search</mat-icon>
+              </mat-form-field>
           </div>
-          <div class="communitydiv" style="width:1000px;">
-             NEW COMMUNITY
-          </div>     
-        </div>
-      
-    </div>
+      </div>
+      <div class="main">
+          <!-- <router-outlet>
+          </router-outlet> -->
+          <div style="display: flex;">
+              <div class="welcomediv">
+                  Welcome Back
+              </div>
+              <div class="communitydiv">
+                <mat-icon style="margin-top:10px;">add</mat-icon>
+                  NEW COMMUNITY
+              </div>
+              <div class="activediv">
+                Active Communities
+              </div>
+          </div>
+
+      </div>
   </div>
 </div>
