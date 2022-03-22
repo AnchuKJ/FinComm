@@ -1,37 +1,34 @@
 <div fxLayout="row">
     <div fxFlex="70">
         <div fxLayout="row">
-            <div fxFlex="50">Welcome back</div>
-            <div>New Community</div>
+            <div fxFlex="50" class="welcomediv">Welcome back</div>
+            <div class="communitydiv">
+              + New Community</div>
+             
         </div>
         <div>
             <mat-form-field appearance="standard">                  
-                <input matInput placeholder="Placeholder">
-                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <input matInput placeholder="Search Community">
+                <mat-icon matSuffix>search</mat-icon>
             </mat-form-field>
         </div>
         <div fxLayout="row">
-            <div fxFlex="70">Active Communities</div>
+            <div fxFlex="70"class="activediv">Active Communities</div>
             <div>
                 <mat-icon>chevron_left</mat-icon>
                 <mat-icon>navigate_next</mat-icon>
             </div>
         </div>
+        <div class="calendardiv">
+          <b>
+            Lot Calendar
+          </b>
+          <mat-card class="demo-inline-calendar-card">
+            <mat-calendar></mat-calendar>
+          </mat-card>
+        </div>
     </div>
     <div>
 
-    </div>
-</div>
-
-<div style="display: flex;">
-    <div class="welcomediv">
-        Welcome Back
-    </div>
-    <div class="communitydiv">
-      <mat-icon style="margin-top:10px;">add</mat-icon>
-        NEW COMMUNITY
-    </div>
-    <div class="activediv">
-      Active Communities
     </div>
 </div>

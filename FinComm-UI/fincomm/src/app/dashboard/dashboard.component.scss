@@ -1,0 +1,87 @@
+.welcomediv {
+  //position: absolute;
+  width: 160px;
+  height: 31px;
+  left: 285px;
+  top: 118px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600 bold;
+  font-size: 22px;
+  margin-left: 50px;
+  line-height: 143%;
+  letter-spacing: -0.03em;
+  color: #8777e0;
+}
+
+.communitydiv {
+  // position: absolute;
+  top: 118px;
+  font-family: "Poppins";
+  font-style: normal;
+  background-color: #8777e0;
+  font-weight: 200;
+  font-size: 14px;
+  //line-height: 143%;
+  font-size: 15px;
+  /* identical to box height, or 20px */
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: white;
+  width: 150px;
+  align-content: center;
+  border-radius: 25%;
+}
+
+element.style {
+  margin-top: 10px;
+}
+
+.activediv {
+  position: absolute;
+  position: absolute;
+  width: 158px;
+  height: 23px;
+  left: 310px;
+  top: 220px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 143%;
+
+  /* identical to box height, or 23px */
+
+  letter-spacing: -0.03em;
+
+  color: #000000;
+}
+.linediv {
+  position: absolute;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  margin-top: -20px;
+
+  color: #8f8f8f;
+}
+
+
+.calendardiv {
+  position: absolute;
+  width: 270px;
+  height: 140px;
+  left: 1022px;
+  top: 148px;
+
+  background: #ffffff;
+  border-radius: 21px;
+}
