@@ -1,0 +1,80 @@
+<div fxLayout="row" class="communitydetailsdiv">
+    <div fxFlex="68" class="leftdiv">
+        <div fxLayout="column" class="communitydiv">
+            <div fxLayout="row" class="communityheaderrow">
+                <div fxFlex="12" class="communitylogo"><img src="assets\communitylogo.png"></div>
+                <div fxFlex="78" class="communityname">Welfare Group</div>
+                <div fxFlex="10"><img class="spinimg" src="assets\spin.png"></div>
+            </div>
+            <div class="communitydescription">
+                Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. 
+                Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+            </div>
+            <div fxLayout="row" class="communitydata">
+                <div class="myengagements">
+                    <div class="myengagementtitle">My Engagements</div>
+                    <div class="engagementchart">
+                        <ngx-charts-pie-chart 
+                        [results]="myengagement"
+                        [legend]="true"
+                        [legendPosition]="legendposition"
+                        [legendTitle]="legendTitle"
+                        [view]="[305,250]"
+                        [labels]="false" 
+                        [customColors]="engagementcolor"
+                        [gradient]="true">
+                    </ngx-charts-pie-chart>
+                    </div>
+                </div>
+                <div class="detailsdiv">
+                    <div fxLayout="row">
+                        <div class="box1 box">
+                            <div class="circlediv"><mat-icon>volunteer_activism</mat-icon></div>
+                            <div class="boxvalue">${{communitydetails.monthlysavings}}</div>
+                            <div class="boxtitle">Monthly Savings</div>
+                        </div>
+                        <div class="box2 box">
+                            <div class="circlediv"><mat-icon>account_balance</mat-icon></div>
+                            <div class="actiondiv"><mat-icon [matMenuTriggerFor]="menu" >more_vert</mat-icon></div>
+                            <mat-menu #menu="matMenu">
+                                <button mat-menu-item><mat-icon>desktop_windows</mat-icon>View</button>
+                              </mat-menu>
+                            <div class="boxvalue">{{communitydetails.loanrequests}}</div>
+                            <div class="boxtitle">Loan Requests</div>
+                        </div>
+                    </div>
+                    <div fxLayout="row">
+                        <div class="box3 box">
+                            <div class="circlediv"><mat-icon>emoji_events</mat-icon></div>
+                            <div class="boxvalue">${{communitydetails.lotamount}}</div>
+                            <div class="boxtitle">Lot Amount</div>
+                        </div>
+                        <div class="box4 box">
+                            <div class="circlediv"><mat-icon>attractions</mat-icon></div>
+                            <div class="boxvalue">{{communitydetails.nextlotdate}}</div>
+                            <div class="boxtitle">Next Lot Date</div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="offertitlediv">Offers</div>    
+        <div fxLayout="row" class="offerdiv">
+            <div fxLayout="column" class="offerdetail">
+                <img src="assets\offer1.png">
+                <div class="offertitle">Get 10% Offer on any purchase</div>
+            </div>
+            <div fxLayout="column" class="offerdetail">
+                <img src="assets\offer2.png">
+                <div class="offertitle">Get 10% Offer on any purchase</div>
+            </div>
+            <div fxLayout="column" class="offerdetail">
+                <img src="assets\offer3.png">
+                <div class="offertitle">Get 10% Offer on any purchase</div>
+            </div>
+        </div>
+    </div>
+    <div fxFlex="32" class="rightdiv">
+
+    </div>
+</div>

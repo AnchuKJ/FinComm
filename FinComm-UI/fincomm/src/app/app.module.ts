@@ -13,7 +13,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { CommunitydetailsComponent } from './communitydetails/communitydetails.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatInputModule} from '@angular/material/input';
-
+import {MatMenuModule} from '@angular/material/menu';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,9 @@ import {MatInputModule} from '@angular/material/input';
     BrowserAnimationsModule,
     MatIconModule,    
     FlexLayoutModule,
-    MatInputModule
+    MatInputModule,
+    MatMenuModule,
+    NgxChartsModule
   ],
   providers: [MatDatepickerModule],
   bootstrap: [AppComponent]

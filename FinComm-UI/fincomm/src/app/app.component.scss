@@ -2,9 +2,9 @@
   width: 100%;
   height: 100%;
   .leftdiv {
-    padding: 20px;
+    padding: 20px 20px 10px 40px;
     border-right: 2px solid #f1f6fc;
-    min-width:225px !important;
+    min-width:285px !important;
     .logodiv {
       padding: 40px 0px 0px 10px;
       .titlediv {
@@ -24,8 +24,7 @@
           padding: 15px 80px 15px 15px;
           color: #1E1E1E;
           text-decoration: none;
-          font-family: "Poppins";
-          font-size: 15px;
+          font-size: 16px;
           letter-spacing: 0.02em;
         }
         .active {
@@ -40,7 +39,7 @@
         mat-icon {
           vertical-align: middle;
           margin-right: 10px;
-          font-size: 18px;
+          font-size: 20px;
           color: #8777e0;
         }
       }
@@ -105,6 +104,9 @@
             color:#828282 !important;
           }
       }
+    }
+    .main{
+        height: 100%;
     }
   }
 }

@@ -1,0 +1,168 @@
+.communitydetailsdiv{
+    height: 100%;
+    .leftdiv{
+        margin: 25px;
+        .communitydiv{     
+            border-radius: 20px;       
+            box-shadow: 11px 9px 21px 0px rgba(130,130,130,0.49);
+            -webkit-box-shadow: 11px 9px 21px 0px rgba(130,130,130,0.49);
+            -moz-box-shadow: 11px 9px 21px 0px rgba(130,130,130,0.49);
+            padding: 30px 30px 20px 30px;
+            .communityheaderrow{
+                .communitylogo{
+                    min-width: 150px;
+                }
+                .communityname{
+                    vertical-align: middle;
+                    margin-top: 45px;
+                    font-size: 26px;
+                    font-weight: 600;
+                    letter-spacing: 0.04em;
+                }
+                .spinimg{
+                    cursor: pointer;
+                }
+            }
+
+            .communitydescription{
+                color: #828282;
+                margin: 10px 0;
+                font-size: 16px;
+            }
+            .communitydata{
+                margin-top: 20px;
+                .myengagements{
+                    text-align: center; 
+                    box-shadow: 11px 9px 21px 0px rgba(130,130,130,0.49);
+                    -webkit-box-shadow: 11px 9px 21px 0px rgba(130,130,130,0.49);
+                    -moz-box-shadow: 11px 9px 21px 0px rgba(130,130,130,0.49);
+                    background: linear-gradient(180deg, #81A1DF 11.98%, rgba(129, 161, 223, 0) 100%);
+                    border-radius: 20px;
+                    .myengagementtitle{
+                        margin-top: 20px;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 143%;
+                        letter-spacing: 0.02em;
+                        color: #FFFFFF;
+                    }
+                    .engagementchart{}
+                }
+                .detailsdiv{
+                    margin-left: 40px;
+                    margin-top: 20px;
+                    .box{
+                        width: 275px;
+                        height: 130px;
+                        text-align: center;
+                        box-shadow: 11px 9px 21px 0px rgba(130,130,130,0.49);
+                        .circlediv{
+                            border: 3px solid white;
+                            border-radius: 40px;
+                            width: 50px;
+                            margin: auto;
+                            position: relative;
+                            top: -23px;
+                            mat-icon{                              
+                                padding: 5px 0px;
+                                color: white;
+                                font-size: 35px;
+                                margin-left: -7px;
+                            }
+                        }
+                        .boxvalue{
+                            font-size: 24px;
+                            color: #ffffff;
+                            font-weight: 600;
+                            letter-spacing: 0.02em;
+                        }
+                        .boxtitle{
+                            margin-top: 10px;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 143%;
+                            letter-spacing: 0.03em; 
+                            color: rgba(255, 255, 255, 0.7);                           
+                        }
+                    }
+                    .box1{                       
+                        background-color: #ABA0E9;
+                        border-radius: 20px 0px;  
+                        margin: 0px 30px 35px 0px; 
+                        .circlediv{
+                            background-color: #ABA0E9;                            
+                        }                     
+                    }
+                    .box2{
+                        background: #A781DF;
+                        border-radius: 0px 20px;
+                        margin: 0px 25px 35px 0px;
+                        .circlediv{
+                            background-color: #A781DF;                            
+                        }   
+                        .actiondiv{
+                            position: relative;
+                            float: right;
+                            text-align: right;
+                            color: #ffffff;
+                            top: -40px;
+                            left: -10px;
+                        }
+                        .boxvalue{
+                            margin-left: 25px;
+                        }
+                        
+                    }
+                    .box3{
+                        background: #CA5FBF;
+                        border-radius: 20px 0px;
+                        margin: 0px 30px 0px 0px;
+                        .circlediv{
+                            background-color: #CA5FBF;                            
+                        }   
+                    }
+                    .box4{
+                        background: #9AB4E5;
+                        border-radius: 0px 20px;
+                        margin: 0px 25px 0px 0px;
+                        .circlediv{
+                            background-color: #9AB4E5;                            
+                        }   
+                    }
+                }
+            }            
+        }
+
+        .offertitlediv{
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 30px;
+        }
+
+        .offerdiv{
+            background: linear-gradient(268.37deg, rgba(167, 129, 223, 0.8) 4.37%, #A781DF 95.97%);
+            box-shadow: 0px 14px 40px rgba(109, 141, 173, 0.25);
+            border-radius: 21px;
+            margin: 20px 0px;
+            .offerdetail{
+                margin: auto;
+                padding: 30px;
+                img{
+                    width: 95px;
+                    height: 95px;
+                }
+                .offertitle{
+                    color: #ffffff;
+                    font-weight: 600;
+                    font-size: 14px;
+                    max-width: 130px;
+                }
+            }
+        }
+    }
+
+    .rightdiv{
+        background-color: #F3EFFB;
+        
+    }
+}

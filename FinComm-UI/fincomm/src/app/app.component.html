@@ -71,13 +71,16 @@
             <div class="namediv">Lizza Antony</div>
             <div class="iddiv">ID:1234567</div>
           </div>
-          <mat-icon class="expandicon">expand_more</mat-icon>
+          <mat-icon [matMenuTriggerFor]="menu" class="expandicon">expand_more</mat-icon>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item><mat-icon>person</mat-icon>Profile</button>
+            <button mat-menu-item><mat-icon>logout</mat-icon>Logout</button>
+          </mat-menu>
         </div>
       </div>
       <div class="main">
            <router-outlet>
-          </router-outlet> 
-          
+          </router-outlet>          
 
       </div>
   </div>
