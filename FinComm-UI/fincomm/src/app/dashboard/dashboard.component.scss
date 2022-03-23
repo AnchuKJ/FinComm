@@ -39,7 +39,6 @@ element.style {
 
 .activediv {
   position: absolute;
-  position: absolute;
   width: 158px;
   height: 23px;
   left: 310px;
@@ -50,13 +49,23 @@ element.style {
   font-weight: 600;
   font-size: 16px;
   line-height: 143%;
+  margin-left: 80px;
+
 
   /* identical to box height, or 23px */
 
   letter-spacing: -0.03em;
 
   color: #000000;
+  
 }
+.navigate{
+  margin-left: 600px;
+  margin-top: 100px;
+
+}
+
+
 .linediv {
   position: absolute;
 
@@ -72,7 +81,226 @@ element.style {
   margin-top: -20px;
 
   color: #8f8f8f;
+  mat-form-field{
+    width: 700px;
+  }
 }
+.rectanglediv{
+text-align: center;
+  width: 256px;
+  height: 322px;  
+  background: linear-gradient(180deg, rgba(169, 133, 223, 0.71) 0%, #A985DF 99.98%);
+  box-shadow: 0px 14px 40px rgba(42, 80, 118, 0.25);
+  border-radius: 21px;
+  margin-top: 10px;
+  margin-left: 40px;
+
+}
+image1{
+  width: 90px;
+  height: 100px;
+  left: 488px;
+  top: 317px;
+}
+p{
+width: 112px;
+height: 23px;
+left: 477px;
+top: 418px;
+margin-left: 75px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 143%;
+/* identical to box height, or 23px */
+
+text-align: center;
+letter-spacing: -0.03em;
+
+color: #FFFFFF;
+
+}
+button{
+  left: 0%;
+right: 0%;
+top: 8.33%;
+bottom: 0%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 143%;
+/* or 17px */
+
+text-align: center;
+letter-spacing: 0.035em;
+text-transform: uppercase;
+
+color: #A781DF;
+}
+a{
+width: 104px;
+height: 41px;
+left: 481px;
+top: 480px;
+margin-left: 80px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 41px;
+/* identical to box height, or 293% */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+
+color: #FFFFFF;
+
+}
+b{
+width: 124px;
+height: 41px;
+left: 475px;
+top: 508px;
+margin-left: 70px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 41px;
+/* identical to box height, or 293% */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+
+color: #FFFFFF;
+}
+.loan{
+left: 31.74%;
+right: 57.22%;
+top: 53.29%;
+bottom: 44.58%;
+
+background: #FFFFFF;
+border-radius: 6px;
+}
+.carediv{
+  width: 124px;
+  height: 23px;
+  left: 760px;
+  top: 418px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 143%;
+  /* identical to box height, or 23px */
+
+  text-align: center;
+  letter-spacing: -0.03em;
+
+  color: #000000;
+}
+.open{
+  left: 0%;
+  right: 0%;
+  top: 8.33%;
+  bottom: 0%;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 143%;
+  /* or 17px */
+
+  text-align: center;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+
+  color: #a109c0;
+
+}
+.startdiv{
+  width: 155px;
+  height: 20px;
+  left: 739px;
+  top: 485px;
+  margin-left: 55px;
+  margin-top: 20px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  /* identical to box height, or 20px */
+
+
+  color: #8F8F8F;
+}
+.membersdiv{
+  width: 136px;
+height: 20px;
+left: 748px;
+top: 514px;
+margin-left: 75px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 143%;
+/* identical to box height, or 20px */
+
+
+color: #8F8F8F;
+}
+.invitationdiv{
+  width: 200px;
+  height: 41px;
+  left: 722px;
+  top: 551px;
+  margin-left: 30px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 41px;
+  /* identical to box height, or 293% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #a109c0;
+}
+.secondrectanglediv{
+  text-align: center;
+  position: absolute;
+  width: 256px;
+  height: 322px;
+  left: 694px;
+  top: 292px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 14px 40px rgba(109, 141, 173, 0.25);
+  border-radius: 21px;
+  margin-top: -35px;
+  margin-left: 20px;
+
+}
+
 
 
 .calendardiv {

@@ -14,7 +14,7 @@ import { CommunitydetailsComponent } from './communitydetails/communitydetails.c
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatInputModule} from '@angular/material/input';
 import {MatMenuModule} from '@angular/material/menu';
-import { NgxChartsModule } from '@swimlane/ngx-charts';
+import {NgxChartsModule} from '@swimlane/ngx-charts';
 
 @NgModule({
   declarations: [
@@ -34,7 +34,7 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
     FlexLayoutModule,
     MatInputModule,
     MatMenuModule,
-    NgxChartsModule
+    NgxChartsModule,
   ],
   providers: [MatDatepickerModule],
   bootstrap: [AppComponent]
