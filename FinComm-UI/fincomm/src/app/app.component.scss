@@ -4,7 +4,7 @@
   .leftdiv {
     padding: 20px;
     border-right: 2px solid #f1f6fc;
-    width: 17%;
+    min-width:225px !important;
     .logodiv {
       padding: 40px 0px 0px 10px;
       .titlediv {
@@ -22,7 +22,7 @@
         width: 100%;
         a {
           padding: 15px 80px 15px 15px;
-          color: #8777e0;
+          color: #1E1E1E;
           text-decoration: none;
           font-family: "Poppins";
           font-size: 15px;
@@ -33,11 +33,15 @@
           box-shadow: 4px 15px 60px rgba(109, 141, 173, 0.25);
           border-radius: 15px;
           color: white;
+          mat-icon{
+            color:white;
+          }
         }
         mat-icon {
           vertical-align: middle;
           margin-right: 10px;
           font-size: 18px;
+          color: #8777e0;
         }
       }
     }
@@ -45,13 +49,14 @@
   .rightdiv {
     width: 83%;
     .headerdiv {
-      padding: 20px;
       border-bottom: 2px solid #f1f6fc;
       .searchdiv {
+          padding-top: 20px;
         mat-form-field {
           float: right;
-          color: #bbbbbb;
-          width: 300px !important;
+          font-size: 12px;
+          opacity: .9;
+          width: 400px !important;
           ::mat-form-field-wrapper {
             padding-bottom: 0px !important;
           }
@@ -63,6 +68,42 @@
           border: 1px solid;
           border-radius: 90px;
         }
+      }
+
+      .rightbannerdiv{
+          margin: auto;
+          vertical-align: middle;
+          justify-content: flex-end;
+          mat-icon{
+              color: #8777e0;
+              font-size: 22pt;
+              padding:25px 15px;
+          }
+          img{
+              width:56px;
+              height: 56px;
+              margin: 10px 15px 0px 15px;
+          }
+          .namemaindiv{
+              margin-top: 15px;
+              .namediv{
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 20px;             
+                color: #828282;
+              }
+              .iddiv{
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 25px;                
+                display: flex;
+                align-items: center;
+                color: #BDBDBD;
+              }
+          }
+          .expandicon{
+            color:#828282 !important;
+          }
       }
     }
   }
@@ -76,59 +117,3 @@
   ::ng-deep .mat-form-field-outline-end {
     border-radius: 0 28px 28px 0 !important;
   }
-
-.welcomediv {
-  //position: absolute;
-  width: 160px;
-  height: 31px;
-  left: 285px;
-  top: 118px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600 bold;
-  font-size: 22px;
-  margin-left: 50px;
-  line-height: 143%;
-  letter-spacing: -0.03em;
-  color: #8777e0;
-}
-
-.communitydiv {
-  // position: absolute;
-  font-family: "Poppins";
-  font-style: normal;
-  background-color:#8777e0 ;
-  font-weight: 200;
-  font-size: 14px;
-  line-height: 143%;
-  margin-top: 5px;
-  font-size: 18px;
-  margin-left: 200px;
-  /* identical to box height, or 20px */
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color:white;
-  width: 200px;
-  align-content: center;
-  border-radius: 35%;
-}
-
-.activediv {
-  position: absolute;
-  position: absolute;
-  width: 158px;
-  height: 23px;
-  left: 405px;
-  top: 249px;
-
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 143%;
-  /* identical to box height, or 23px */
-
-  letter-spacing: -0.03em;
-
-  color: #000000;
-}

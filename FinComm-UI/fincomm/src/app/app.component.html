@@ -55,15 +55,24 @@
           </div>
       </div>
   </div>
-  <div class="rightdiv">
+  <div fxFlex="86" class="rightdiv">
       <div fxLayout="row" class="headerdiv">
-          <div fxFlex="60" class="searchdiv">
-              <mat-form-field appearance="outline">
-                  <mat-label>Search</mat-label>
-                  <input type="email" matInput placeholder="Search">
-                  <mat-icon matSuffix>search</mat-icon>
-              </mat-form-field>
+        <div fxFlex="70" class="searchdiv">
+            <mat-form-field appearance="outline">
+                <input matInput placeholder="Search">
+                <mat-icon matSuffix>search</mat-icon>
+            </mat-form-field>
+        </div>
+        <div fxFlex="30" fxLayout="row" class="rightbannerdiv">
+          <mat-icon>message</mat-icon>
+          <mat-icon>notifications</mat-icon>
+          <img src="assets/currentuser.png">
+          <div class="namemaindiv" fxLayout="column">
+            <div class="namediv">Lizza Antony</div>
+            <div class="iddiv">ID:1234567</div>
           </div>
+          <mat-icon class="expandicon">expand_more</mat-icon>
+        </div>
       </div>
       <div class="main">
            <router-outlet>
