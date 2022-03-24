@@ -15,12 +15,14 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatInputModule} from '@angular/material/input';
 import {MatMenuModule} from '@angular/material/menu';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { LoandetailsComponent } from './loandetails/loandetails.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    CommunitydetailsComponent
+    CommunitydetailsComponent,
+    LoandetailsComponent
   ],
   imports: [
     BrowserModule,

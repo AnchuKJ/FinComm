@@ -1,0 +1,105 @@
+<div fxLayout="row" class="loanmaindiv">
+    <div fxFlex="68" class="leftdiv">
+        <div>
+            <div class="titlediv">Loan requests for approval</div>
+            <div class="approvalmain">
+                <div fxLayout="row" class="loanrequests" *ngFor="let loanrequest of loanrequests">
+                    <img [src]="loanrequest.avatar">
+                    <div fxFlex="40" class="requestdata">
+                        <div class="requestowner">{{loanrequest.name}}</div>
+                        <div class="statusdiv">{{loanrequest.status}}</div>
+                        <div class="requestdatediv">Requested on {{loanrequest.requestdate}}</div>
+                    </div>
+                    <div fxFlex="20" class="amountmaindiv">
+                        <div class="amountdiv">${{loanrequest.amount}}</div>
+                        <div *ngIf="!loanrequest.isnew" class="votesdiv">Votes: {{loanrequest.votes}}</div>
+                    </div>
+                    <div *ngIf="!loanrequest.isnew" fxFlex="20" class="buttondiv">
+                        <div class="submitdiv">Approve</div>
+                        <div class="canceldiv">Reject</div>
+                    </div>
+                    <div *ngIf="loanrequest.isnew" fxFlex="20" class="buttondiv">
+                        <div class="submitdiv">Send for voting</div>
+                        <div class="canceldiv">Cancel</div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div class="loanvoting">
+            <div class="titlediv">Vote for loan requests</div>
+            <div fxLayout="row" class="loanvotingmain">
+                <div class="votingdiv" *ngFor="let loan of votingloans">
+                    <img [src]="loan.avatar">
+                    <div class="namediv">{{loan.name}}</div>
+                    <div class ="amountdiv">{{loan.amount}}</div>
+                    <div fxLayout="row" class="votingicon">
+                        <mat-icon class="up">thumb_up</mat-icon>
+                        <mat-icon class="down">thumb_down</mat-icon>
+                    </div>
+                    <div class="votedate">Voting ends on {{loan.enddate}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="approvedloans">
+            <div class="titlediv">Approved Loans</div>
+            <div class="approvedmain" fxLayout="row">
+                <div class="approveddiv" fxLayout="row" *ngFor="let loan of approvedloans">
+                    <img [src]="loan.avatar">
+                    <div class="approveddata">
+                        <div class="namediv">{{loan.name}}</div>
+                        <div class="amountdiv">Loan Amount  <span>${{loan.amount}}</span></div>
+                        <div class="approveddate">Approved on {{loan.approveddate}}</div>
+                        <div class="votes">Number of votes: {{loan.votes}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div fxFlex="32" class="rightdiv">
+        <div class="titlediv">Loan Requests</div>
+        <div class="chart">
+            <ngx-charts-pie-chart 
+            class="chart"
+            [results]="chartdata"
+            [legend]="true"
+            [legendPosition]="legendposition"
+            [legendTitle]="legendTitle"
+            [view]="[250,250]"
+            [labels]="false" 
+            [customColors]="chartcolor"
+            [gradient]="true">
+            </ngx-charts-pie-chart>
+        </div>
+        <div class="titlediv detailtitle">Loan Details</div>
+        <div fxLayout="row" class="loandetails">
+            <mat-icon>monetization_on</mat-icon>
+            <div class="detailtext">
+                <div class="detailvalue">$2000</div>
+                <div class="description">Maximum Loan Amount</div>
+            </div>
+        </div>
+        <div fxLayout="row" class="loandetails">
+            <mat-icon>account_balance_wallet</mat-icon>
+            <div class="detailtext">
+                <div class="detailvalue">$1500</div>
+                <div class="description">Community Balance for loan</div>
+            </div>
+        </div>
+        <div fxLayout="row" class="loandetails">
+            <mat-icon>real_estate_agent</mat-icon>
+            <div class="detailtext">
+                <div class="detailvalue">10</div>
+                <div class="description">Number of allowed loan requests </div>
+            </div>
+        </div>
+        <div fxLayout="row" class="loandetails">
+            <mat-icon>credit_score</mat-icon>
+            <div class="detailtext">
+                <div class="detailvalue">4</div>
+                <div class="description">Number of approved loans</div>
+            </div>
+        </div>
+
+        <div class="newloan">+ New Loan Request</div>
+    </div>
+</div>

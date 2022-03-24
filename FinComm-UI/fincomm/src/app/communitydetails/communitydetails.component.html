@@ -23,7 +23,7 @@
                         [labels]="false" 
                         [customColors]="engagementcolor"
                         [gradient]="true">
-                    </ngx-charts-pie-chart>
+                        </ngx-charts-pie-chart>
                     </div>
                 </div>
                 <div class="detailsdiv">
@@ -33,12 +33,12 @@
                             <div class="boxvalue">${{communitydetails.monthlysavings}}</div>
                             <div class="boxtitle">Monthly Savings</div>
                         </div>
-                        <div class="box2 box">
+                        <div class="box2 box" routerLink="/loandetails">
                             <div class="circlediv"><mat-icon>account_balance</mat-icon></div>
-                            <div class="actiondiv"><mat-icon [matMenuTriggerFor]="menu" >more_vert</mat-icon></div>
+                           <!--<div class="actiondiv"><mat-icon [matMenuTriggerFor]="menu" >more_vert</mat-icon></div>
                             <mat-menu #menu="matMenu">
-                                <button mat-menu-item><mat-icon>desktop_windows</mat-icon>View</button>
-                              </mat-menu>
+                                <button mat-menu-item routerLink="/loandetails"><mat-icon>desktop_windows</mat-icon>View</button>
+                              </mat-menu>-->
                             <div class="boxvalue">{{communitydetails.loanrequests}}</div>
                             <div class="boxtitle">Loan Requests</div>
                         </div>
@@ -75,6 +75,54 @@
         </div>
     </div>
     <div fxFlex="32" class="rightdiv">
-
+        <div class="righttitle">Community total</div>
+        <div class="rightchart" fxLayout="row">
+            <div class="chartdiv">
+                <ngx-charts-pie-chart 
+                    [results]="communitytotal"
+                    [legend]="true"
+                    [doughnut]="true"
+                    [legendPosition]="legendposition"
+                    [legendTitle]="legendTitle"
+                    [view]="[250,250]"
+                    [labels]="false" 
+                    [customColors]="communitychartcolor"
+                    [gradient]="true">
+                </ngx-charts-pie-chart>
+            </div>
+            <div class="charttotalvalue">
+                <div fxLayout="row" class="chartdetail">
+                    <mat-icon>account_balance</mat-icon>
+                    <div>
+                        <div class="charttotalvalue">$12000</div>
+                        <div class="charttitle">Savings</div>
+                    </div>
+                </div>
+                <div fxLayout="row" class="chartdetail">
+                    <mat-icon>real_estate_agent</mat-icon>
+                    <div>
+                        <div class="charttotalvalue">$5000</div>
+                        <div class="charttitle">Loan</div>
+                    </div>
+                </div>
+            </div>           
+        </div>
+        <div class="righttitle">Members</div>
+        <div class="membersdiv" fxLayout="row" fxLayout-wrap>
+            <div class="member" *ngFor="let member of members">
+                <img [src]="member.avatar">
+                <div>{{member.name}}</div>
+            </div>
+        </div>
+        <div class="righttitle">Recent Activity</div>
+        <div class="activitymaindiv">
+            <div class="activitylistdiv" fxLayout="row" *ngFor="let activity of activities">
+                <img [src] = "activity.avatar">
+                <div class="activitydiv">
+                    <div class="activityowner">{{activity.name}}</div>
+                    <div class="activityname">{{activity.activity}}</div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
