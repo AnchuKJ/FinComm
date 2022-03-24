@@ -300,9 +300,172 @@ color: #8F8F8F;
   margin-left: 20px;
 
 }
+.Invitations{
+width: 82px;
+height: 23px;
+left: 405px;
+top: 649px;
+margin-left: 80px;
+margin-top: 20px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 143%;
+/* identical to box height, or 23px */
 
+letter-spacing: -0.03em;
 
+color: #000000;
 
+}
+.invitationrectangle{
+width: 545px;
+height: 140px;
+left: 405px;
+top: 687px;
+margin-left: -45px;
+background: #FFFFFF;
+box-shadow: 0px 14px 40px rgba(109, 141, 173, 0.25);
+border-radius: 21px;
+}
+.cancerrelief{
+width: 103px;
+height: 23px;
+left: 551px;
+top: 712px;
+margin-left: 125px;
+margin-top: -215px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 143%;
+/* identical to box height, or 23px */
+
+letter-spacing: -0.03em;
+
+color: #000000;
+}
+.startdate{
+  margin-left: 100px;
+  margin-top: 10px;
+  height: 40px;
+  width: 135px;
+  left: 0%;
+right: 0%;
+top: 8.33%;
+bottom: 0%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 143%;
+/* or 17px */
+
+text-align: center;
+letter-spacing: 0.035em;
+text-transform: uppercase;
+
+color: #a109c0;
+}
+.acceptrectangle{
+  text-align: center;
+  margin-left:350px;
+  margin-top: -38px;
+width: 124px;
+height: 32.2px;
+left: 817px;
+top: 721px;
+font-size: medium;
+background: #8777E0;
+border-radius: 21px;
+}
+.thumbsup{
+  margin-left: 350px;
+left: 4.17%;
+right: 4.17%;
+top: 4.17%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+}
+.ups{
+  color: #8B2CF5;
+}
+.imageinvitation{
+  width: 90px;
+  height: 90px;
+  left: 430px;
+  top: 712px;
+  
+}
+.acceptbutton{
+ 
+                        left: 722px;
+                        top: 551px;
+                        margin-left: 360px;
+                        margin-top: -50px;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 41px;
+                        /* identical to box height, or 293% */
+
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        letter-spacing: 0.06em;
+
+                        color: #a109c0;
+                        width: 136px;
+                        height: 30px;
+                        text-align: center;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 143%;
+                        color: #FFFFFF;
+                        background: #8777E0;
+                        border-radius: 21px;
+                        padding-top: 8px;
+                        
+                        letter-spacing: 0.04em;
+
+}
+.rejectbutton{
+  
+  left: 722px;
+  top: 551px;
+  margin-left: -97px;
+  margin-top: -10px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 41px;
+  /* identical to box height, or 293% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #a109c0;
+  width: 136px;
+  height: 30px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: #FFFFFF;
+  background: #4b4b4d;
+  border-radius: 21px;
+  padding-top: 8px;
+  
+  letter-spacing: 0.04em;
+}
 .calendardiv {
   position: absolute;
   width: 270px;
