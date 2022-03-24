@@ -17,6 +17,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { LoandetailsComponent } from './loandetails/loandetails.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,7 @@ import { LoandetailsComponent } from './loandetails/loandetails.component';
     FlexLayoutModule,
     MatInputModule,
     MatMenuModule,
-    NgxChartsModule
+    NgxChartsModule,
   ],
   providers: [MatDatepickerModule],
   bootstrap: [AppComponent]
