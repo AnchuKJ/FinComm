@@ -1,0 +1,295 @@
+.loanmaindiv{
+    .titlediv{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 143%;
+        letter-spacing: 0.04em;
+        margin-bottom: 15px;
+    }
+    .leftdiv{
+        margin: 30px 50px;
+       
+        .approvalmain{
+            max-height: 270px;
+            overflow-y: scroll;
+            padding: 10px 15px 15px;
+            .loanrequests{
+                padding: 15px;                  
+                box-shadow: 0px 14px 40px rgba(109, 141, 173, 0.25);
+                -webkit-box-shadow: 11px 9px 21px 0px rgba(130,130,130,0.49);
+                -moz-box-shadow: 11px 9px 21px 0px rgba(130,130,130,0.49);
+                border-radius: 20px;
+                margin-bottom: 15px;
+                img{
+                    margin: 5px 10px;
+                    width: 85px;
+                }
+                .requestdata{
+                    margin-left: 50px;
+                    margin-top: 5px;
+                    .requestowner{
+                        font-weight: 550;
+                        font-size: 16px;
+                        line-height: 143%;
+                        letter-spacing: 0.04em;
+                        margin-bottom: 10px;
+                    }
+                    .statusdiv{
+                        background: #A781DF;
+                        border-radius: 6px;
+                        width: 120px;
+                        text-align: center;
+                        color: white;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 143%;
+                        text-align: center;
+                        letter-spacing: 0.04em;
+                        text-transform: uppercase;
+                        padding: 7px 0px 5px 0px;
+                        margin-bottom: 10px;
+                    }
+                    .requestdatediv{
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 143%;
+                        color: #8F8F8F;
+                    }
+                }
+
+                .amountmaindiv{
+                    .amountdiv{
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 143%;
+                        color: #4CAF50;
+                        margin:20px 0px;
+                    }
+                    .votesdiv{
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 143%;
+                        color: #8F8F8F;
+                    }
+                }
+
+                .buttondiv{
+                    text-align: center;
+                    border-left: 1px solid #ECECEC;
+                    margin: auto;
+                    .submitdiv{
+                        width: 136px;
+                        height: 30px;
+                        text-align: center;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 143%;
+                        color: #FFFFFF;
+                        background: #8777E0;
+                        border-radius: 21px;
+                        padding-top: 8px;
+                        margin: 0px auto;
+                        letter-spacing: 0.04em;
+                    }
+                    .canceldiv{     
+                        margin: 10px auto 0px auto;                   
+                        width: 136px;
+                        padding-top: 8px;
+                        height: 30px;
+                        text-align: center;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 143%;
+                        color: #FFFFFF;
+                        background: #8F8F8F;
+                        border-radius: 21px;
+                        letter-spacing: 0.04em;
+                    }
+                }
+            }            
+        }
+
+        .loanvoting{
+            margin-top: 20px;
+            .titlediv{
+                margin-bottom: 0px;
+            }
+            .loanvotingmain{
+                margin-top: 0px;
+                max-height: 250px;
+                overflow-y: scroll;
+                padding: 0px 15px 15px;
+                flex-wrap: wrap;
+                .votingdiv{
+                    width: 270px;
+                    height: 180px;
+                    box-shadow: 0px 14px 40px rgba(109, 141, 173, 0.25);
+                    -webkit-box-shadow: 11px 9px 21px 0px rgba(130,130,130,0.49);
+                    -moz-box-shadow: 11px 9px 21px 0px rgba(130,130,130,0.49);
+                    text-align: center;
+                    border-radius: 21px;
+                    margin-right: 30px;
+                    margin-top: 60px;
+                    img{
+                        width: 100px;
+                        position: relative;
+                        top: -50px;
+                    }
+                    .namediv{
+                        margin-top: -44px;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 143%;
+                        letter-spacing: 0.04em;
+                    }
+                    .amountdiv{
+                        width: 88px;
+                        margin: auto;
+                        background: #A781DF;
+                        border-radius: 6px;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 143%;
+                        text-align: center;
+                        letter-spacing: 0.035em;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                        padding-top: 3px;
+                        margin-top: 5px;
+                    }
+                    .votingicon{
+                        margin-top: 5px;
+                        mat-icon{                            
+                            margin: auto;
+                            font-size: 28px;
+                        }
+                        .up{
+                            color: #8B2CF5;
+                        }
+
+                        .down{
+                            color: #666666;
+                        }
+                    }
+                    .votedate{
+                        margin-top: 10px;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 143%;
+                        color: #8F8F8F;
+                    }
+                }
+            }
+        }
+
+        .approvedloans{
+            margin-top: 20px;
+            .approvedmain{
+                overflow-y: scroll;
+                flex-wrap: wrap;
+                max-height: 160px;
+                .approveddiv{
+                    width: 420px;
+                    box-shadow: 0px 14px 40px rgba(109, 141, 173, 0.25);
+                    -webkit-box-shadow: 11px 9px 21px 0px rgba(130,130,130,0.49);
+                    -moz-box-shadow: 11px 9px 21px 0px rgba(130,130,130,0.49);
+                    border-radius: 21px;
+                    margin: 10px 20px 10px 20px;
+                    padding: 15px;
+                    img{
+                        width: 100px;
+                        margin-left: 20px;
+                    }
+                    .approveddata{
+                        margin-left: 30px;
+                        .namediv{
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 143%;
+                            letter-spacing: -0.03em;
+                            margin-bottom: 2px;
+                        }
+                        .amountdiv{
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 30px;
+                            color: #8F8F8F;
+                            span{
+                                font-weight: 600;
+                                font-size: 14px;
+                                line-height: 143%;
+                                color: #4CAF50;
+                                margin-left: 10px;
+                            }
+                        }
+                        .approveddate{
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 35px;  
+                            color: #8F8F8F;
+                            margin-bottom: 2px;
+                        }
+                        .votes{
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 143%;
+                            color: #8F8F8F;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .rightdiv{
+        background-color: #F3EFFB;
+        padding: 30px;
+        .titlediv{
+            margin-bottom: 0px;
+        }
+        .chart{
+            margin: auto;
+            width: 250px;
+        }
+        .detailtitle{
+            margin-top: 15px;
+        }
+        .loandetails{
+            margin-top: 25px;
+            margin-bottom: 10px;
+            mat-icon{
+                color: #8B2CF5;
+                font-size: 44px;
+                margin-top: 5px;
+            }
+            .detailtext{
+                margin-left: 40px;
+                .detailvalue{
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 143%;
+                }
+                .description{
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 143%;
+                    color: #828282;
+                }
+            }
+        }
+        .newloan{
+            width: 250px;
+            margin: 80px auto auto;
+            background: #8777E0;
+            border-radius: 21px;
+            color: white;
+            padding: 2px;
+            text-align: center;
+            letter-spacing: 0.06em;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 41px;
+        }
+    }
+}
