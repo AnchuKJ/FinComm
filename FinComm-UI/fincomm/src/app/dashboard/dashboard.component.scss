@@ -15,22 +15,18 @@
 }
 
 .communitydiv {
-  // position: absolute;
-  top: 118px;
-  font-family: "Poppins";
-  font-style: normal;
-  background-color: #8777e0;
-  font-weight: 200;
-  font-size: 14px;
-  //line-height: 143%;
-  font-size: 15px;
-  /* identical to box height, or 20px */
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: white;
-  width: 150px;
-  align-content: center;
-  border-radius: 25%;
+  width: 136px;
+                        height: 30px;
+                        text-align: center;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 143%;
+                        color: #FFFFFF;
+                        background: #8777E0;
+                        border-radius: 21px;
+                        padding-top: 8px;
+                        margin: 0px auto;
+                        letter-spacing: 0.04em;
 }
 
 element.style {
@@ -212,23 +208,18 @@ border-radius: 6px;
   color: #000000;
 }
 .open{
-  left: 0%;
-  right: 0%;
-  top: 8.33%;
-  bottom: 0%;
-
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 143%;
-  /* or 17px */
-
+  width: 120px;
+  height: 30px;
   text-align: center;
-  letter-spacing: 0.035em;
-  text-transform: uppercase;
-
-  color: #a109c0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: #FFFFFF;
+  background: #8777E0;
+  border-radius: 21px;
+  padding-top: 8px;
+  margin: 0px auto;
+  letter-spacing: 0.04em;
 
 }
 .startdiv{
@@ -266,24 +257,19 @@ line-height: 143%;
 color: #8F8F8F;
 }
 .invitationdiv{
-  width: 200px;
-  height: 41px;
-  left: 722px;
-  top: 551px;
-  margin-left: 30px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 41px;
-  /* identical to box height, or 293% */
-
-  display: flex;
-  align-items: center;
+  width: 136px;
+  height: 30px;
   text-align: center;
-  letter-spacing: 0.06em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: #FFFFFF;
+  background: #8777E0;
+  border-radius: 21px;
+  padding-top: 8px;
+  margin: 0px auto;
+  letter-spacing: 0.04em;
 
-  color: #a109c0;
 }
 .secondrectanglediv{
   text-align: center;
@@ -324,7 +310,8 @@ width: 545px;
 height: 140px;
 left: 405px;
 top: 687px;
-margin-left: -45px;
+margin-left: 45px;
+margin-top: 20px;
 background: #FFFFFF;
 box-shadow: 0px 14px 40px rgba(109, 141, 173, 0.25);
 border-radius: 21px;
@@ -334,8 +321,8 @@ width: 103px;
 height: 23px;
 left: 551px;
 top: 712px;
-margin-left: 125px;
-margin-top: -215px;
+margin-left: 50px;
+margin-top: 20px;
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 600;
@@ -348,27 +335,36 @@ letter-spacing: -0.03em;
 color: #000000;
 }
 .startdate{
-  margin-left: 100px;
-  margin-top: 10px;
-  height: 40px;
-  width: 135px;
-  left: 0%;
-right: 0%;
-top: 8.33%;
-bottom: 0%;
+                        width: 136px;
+                        padding-top: 10px;
+                        margin-left: -20px;
+                        margin-top: 10px;
+                        height: 30px;
+                        text-align: center;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 143%;
+                        color: #FFFFFF;
+                        background: #8777E0;
+                        border-radius: 21px;
+                        letter-spacing: 0.04em;
+}
+.communityleader{
+  margin-top: 20px;
+  width: 216px;
+height: 20px;
+left: 554px;
+top: 784px;
 
 font-family: 'Poppins';
 font-style: normal;
-font-weight: 600;
-font-size: 12px;
+font-weight: 400;
+font-size: 14px;
 line-height: 143%;
-/* or 17px */
+/* identical to box height, or 20px */
 
-text-align: center;
-letter-spacing: 0.035em;
-text-transform: uppercase;
 
-color: #a109c0;
+color: #8F8F8F;
 }
 .acceptrectangle{
   text-align: center;
@@ -395,6 +391,8 @@ background: #FFFFFF;
   color: #8B2CF5;
 }
 .imageinvitation{
+  margin-left: 40px;
+  margin-top: 20px;
   width: 90px;
   height: 90px;
   left: 430px;
@@ -402,58 +400,28 @@ background: #FFFFFF;
   
 }
 .acceptbutton{
- 
-                        left: 722px;
-                        top: 551px;
-                        margin-left: 360px;
-                        margin-top: -50px;
-                        font-family: 'Poppins';
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 14px;
-                        line-height: 41px;
-                        /* identical to box height, or 293% */
-
-                        display: flex;
-                        align-items: center;
-                        text-align: center;
-                        letter-spacing: 0.06em;
-
-                        color: #a109c0;
-                        width: 136px;
-                        height: 30px;
-                        text-align: center;
-                        font-weight: 500;
-                        font-size: 14px;
-                        line-height: 143%;
-                        color: #FFFFFF;
-                        background: #8777E0;
-                        border-radius: 21px;
-                        padding-top: 8px;
-                        
-                        letter-spacing: 0.04em;
+                     
+  width: 136px;
+  padding-top: 10px;
+  margin-left: 225px;
+  margin-top: -70px;
+  height: 30px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: #FFFFFF;
+  background: #8777E0;
+  border-radius: 21px;
+  letter-spacing: 0.04em;
 
 }
 .rejectbutton{
   
-  left: 722px;
-  top: 551px;
-  margin-left: -97px;
-  margin-top: -10px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 41px;
-  /* identical to box height, or 293% */
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-
-  color: #a109c0;
   width: 136px;
+  padding-top: 10px;
+  margin-left: 230px;
+  margin-top: 30px;
   height: 30px;
   text-align: center;
   font-weight: 500;
@@ -475,4 +443,115 @@ background: #FFFFFF;
 
   background: #ffffff;
   border-radius: 21px;
+}
+.titlecalendar{
+  margin-left: 30px;
+  margin-top: 20px;
+  width: 108px;
+  height: 23px;
+  left: 1033px;
+  top: 111px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 143%;
+  /* identical to box height, or 23px */
+
+  letter-spacing: 0.02em;
+
+color: #000000;
+}
+.invitationrectangle2{
+  width:545px;
+height: 140px;
+left: 405px;
+top: 687px;
+margin-left: 45px;
+margin-top: 20px;
+background: #FFFFFF;
+box-shadow: 0px 14px 40px rgba(23, 90, 156, 0.25);
+border-radius: 21px
+}
+.imageinvitation2{
+  margin-left: 35px;
+  margin-top: 20px;
+  width: 90px;
+  height: 90px;
+  left: 430px;
+  top: 883px;
+  
+}
+.ecocommunity{
+  width: 175px;
+  margin-left: 20px;
+  margin-top: 25px;
+height: 23px;
+left: 551px;
+top: 883px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 143%;
+/* identical to box height, or 23px */
+
+letter-spacing: -0.03em;
+
+color: #000000;
+}
+.Analytics{
+  margin-left: 700px;
+  margin-top: -400px;
+  width: 79px;
+  height: 23px;
+  left: 1024px;
+  top: 506px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 143%;
+/* identical to box height, or 23px */
+
+letter-spacing: 0.02em;
+
+color: #000000;
+}
+.MonthlyRevenue{
+  margin-left: 700px;
+  margin-top: 200px;
+  width: 145px;
+height: 23px;
+left: 1024px;
+top: 722px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 143%;
+/* identical to box height, or 23px */
+
+letter-spacing: 0.02em;
+
+color: #000000;
+}
+.addcommunity{
+  width: 136px;
+  padding-top: 10px;
+  margin-left: 35px;
+  margin-top: 100px;
+  height: 30px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: #FFFFFF;
+  background: #8777E0;
+  border-radius: 21px;
+  letter-spacing: 0.04em;
 }
