@@ -16,6 +16,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatMenuModule} from '@angular/material/menu';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { LoandetailsComponent } from './loandetails/loandetails.component';
+import { AddcommunityComponent } from './addcommunity/addcommunity.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { LoandetailsComponent } from './loandetails/loandetails.component';
     AppComponent,
     DashboardComponent,
     CommunitydetailsComponent,
-    LoandetailsComponent
+    LoandetailsComponent,
+    AddcommunityComponent
   ],
   imports: [
     BrowserModule,
