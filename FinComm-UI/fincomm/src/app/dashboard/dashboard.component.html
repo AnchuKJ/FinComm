@@ -3,7 +3,7 @@
         <div fxLayout="row">
             <div fxFlex="50" class="welcomediv">Welcome back</div>
             <div class="communitydiv">
-              <a routerLink="/addcommunity" routerLinkActive="active" >+ New Community</a></div>
+              <button onclick="gotoaddcommunity()">+ New Community</button></div>
              
         </div>
         <div class="linediv">
@@ -22,16 +22,16 @@
         <div class="rectanglediv" *ngFor="let item of ActiveCommunity">
            <img class="image1"src="assets\Img.png" >
             <p>{{item.group}}</p>
-            <button class="activestatus">{{item.status}}</button>
+            <div class="activestatus">{{item.status}}</div>
             <br>
             <a class="savings">Savings:{{item.savings}}</a>
             <b class="loantotal">Loan Total:{{item.loanTotal}}</b>
-            <button class="loan">Loan Requests:{{item.loanRequest}}</button>
+            <div class="loan">Loan Requests:{{item.loanRequest}}</div>
         </div>
         <div class="secondrectanglediv">
           <img src="assets\image.png">
           <p class="carediv">We Care for You</p>
-          <button class="open">OPEN</button>
+          <div class="open">OPEN</div>
           <div class="startdiv">Starts on:04 Apr 2022</div>
           <div class="membersdiv">Members joined:5</div>
           <div class="invitationdiv">Send Invitation</div>
@@ -53,7 +53,7 @@
                     <div class="ecocommunity">Eco Friendly Community
                         <div class="startdate2">Starts on 12 APR
                         </div>
-                        <div class="communityleader">Community Leader:{{item.leader}}</div>
+                        <div class="communityleader2">Community Leader:{{item.leader}}</div>
                         <div class="acceptbutton2"><mat-icon>thumb_up</mat-icon>Accept </div>
                 <div class="rejectbutton2"><mat-icon>thumb_down</mat-icon>Reject </div>
                     </div>
@@ -68,31 +68,37 @@
        <div class="Analytics">Analytics
         <div class="chartdiv" fxLayout="row"style="width:300px">
             
-            <!-- <ngx-charts-pie-chart 
+            <ngx-charts-pie-chart class="piechart"
+            
                 [results]="communitytotal"
-                [legend]="true"
-                [doughnut]="true"
-                [legendPosition]="legendposition"
-                [legendTitle]="legendTitle"
-                [view]="[250,250]"
-                [labels]="false" 
-                [customColors]="communitychartcolor"
-                [gradient]="true"> 
-            </ngx-charts-pie-chart> -->
-            <ngx-charts-pie-chart>
-                [results]="communitytotal"
-                [legend]="true"
+               
                 [doughnut]="true"
                 [view]="[250,250]"
                 [labels]="false" 
-                [gradient]="true"> 
+                [gradient]="true" 
                 [customColors]="communitychartcolor"
-                [legendTitle]="legendTitle"
+                [legendTitle]="legendTitle">
             </ngx-charts-pie-chart>
+            <div class="savingsrate">Savings rate:75%</div>
+            <div class="loanrate">Loan:25%</div>
+
         </div>
        </div>
     <div class="MonthlyRevenue">Monthly Revenue
-        <div class="addcommunity">+ Add Community</div>
+        <ngx-charts-bar-vertical class="barchart" 
+        [view]="[250,250]"
+        [results]="incomeData"
+        [legendTitle]="'Product Sale Chart'"
+        [customColors]="incomechartcolor"
+    
+        [yAxisLabel]="'Sale'"
+        [showXAxisLabel]="false"
+        [showYAxisLabel]="false"
+        [xAxis]="false"
+        [yAxis]="false"
+        [gradient]="true">
+</ngx-charts-bar-vertical>
+        <div class="addcommunity" onclick="gotoaddcommunity()">+ Add Community</div>
     </div>
     
 </div>
