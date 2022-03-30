@@ -16,13 +16,17 @@ import {MatInputModule} from '@angular/material/input';
 import {MatMenuModule} from '@angular/material/menu';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { LoandetailsComponent } from './loandetails/loandetails.component';
+import { AddcommunityComponent } from './addcommunity/addcommunity.component';
+import {MatDialogModule} from '@angular/material/dialog';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     CommunitydetailsComponent,
-    LoandetailsComponent
+    LoandetailsComponent,
+    AddcommunityComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +40,8 @@ import { LoandetailsComponent } from './loandetails/loandetails.component';
     FlexLayoutModule,
     MatInputModule,
     MatMenuModule,
-    NgxChartsModule
+    NgxChartsModule,
+    MatDialogModule
   ],
   providers: [MatDatepickerModule],
   bootstrap: [AppComponent]

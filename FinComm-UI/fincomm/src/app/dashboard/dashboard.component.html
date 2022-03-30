@@ -3,10 +3,10 @@
         <div fxLayout="row">
             <div fxFlex="50" class="welcomediv">Welcome back</div>
             <div class="communitydiv">
-              + New Community</div>
+              <div (click)="gotoaddcommunity()">+ New Community</div></div>
              
         </div>
-        <div>
+        <div class="linediv">
             <mat-form-field appearance="standard">                  
                 <input matInput placeholder="Search Community">
                 <mat-icon matSuffix>search</mat-icon>
@@ -14,21 +14,91 @@
         </div>
         <div fxLayout="row">
             <div fxFlex="70"class="activediv">Active Communities</div>
-            <div>
+            <div class="navigate">
                 <mat-icon>chevron_left</mat-icon>
                 <mat-icon>navigate_next</mat-icon>
             </div>
         </div>
+        <div class="rectanglediv" *ngFor="let item of ActiveCommunity">
+           <img class="image1"src="assets\Img.png" >
+            <p>{{item.group}}</p>
+            <div class="activestatus">{{item.status}}</div>
+            <br>
+            <a class="savings">Savings:{{item.savings}}</a>
+            <b class="loantotal">Loan Total:{{item.loanTotal}}</b>
+            <div class="loan">Loan Requests:{{item.loanRequest}}</div>
+        </div>
+        <div class="secondrectanglediv">
+          <img src="assets\image.png">
+          <p class="carediv">We Care for You</p>
+          <div class="open">OPEN</div>
+          <div class="startdiv">Starts on:04 Apr 2022</div>
+          <div class="membersdiv">Members joined:5</div>
+          <div class="invitationdiv">Send Invitation</div>
+        </div>
+        <div class="Invitations" >Invitation</div>
+        <div fxLayout="row" class="invitationrectangle" *ngFor="let item of invitations">
+            <img class="imageinvitation" [src]="item.avatar">
+            <div class="cancerrelief">{{item.scheme}}
+                <div class="startdate">Starts on 12 APR
+                    <div class="communityleader">Community Leader:Ann Maria</div>
+                </div> 
+                <div class="acceptbutton"><mat-icon>thumb_up</mat-icon>Accept </div>
+                <div class="rejectbutton"><mat-icon>thumb_down</mat-icon>Reject </div>
+            </div>
+            
+         </div>
+                <div fxLayout="row" class="invitationrectangle2" *ngFor="let item of Communityleader">
+                    <img class="imageinvitation2"src="assets\invitation2.png">
+                    <div class="ecocommunity">Eco Friendly Community
+                        <div class="startdate2">Starts on 12 APR
+                        </div>
+                        <div class="communityleader2">Community Leader:{{item.leader}}</div>
+                        <div class="acceptbutton2"><mat-icon>thumb_up</mat-icon>Accept </div>
+                <div class="rejectbutton2"><mat-icon>thumb_down</mat-icon>Reject </div>
+                    </div>
+               </div>
+
         <div class="calendardiv">
-          <b>
-            Lot Calendar
-          </b>
-          <mat-card class="demo-inline-calendar-card">
+        <div class="titlecalendar">Lot Calendar</div>
+       <mat-card class="demo-inline-calendar-card">
             <mat-calendar></mat-calendar>
           </mat-card>
         </div>
-    </div>
-    <div>
+       <div class="Analytics">Analytics
+        <div class="chartdiv" fxLayout="row"style="width:300px">
+            
+            <ngx-charts-pie-chart class="piechart"
+            
+                [results]="communitytotal"
+               
+                [doughnut]="true"
+                [view]="[250,250]"
+                [labels]="false" 
+                [gradient]="true" 
+                [customColors]="communitychartcolor"
+                [legendTitle]="legendTitle">
+            </ngx-charts-pie-chart>
+            <div class="savingsrate">Savings rate:75%</div>
+            <div class="loanrate">Loan:25%</div>
 
+        </div>
+       </div>
+    <div class="MonthlyRevenue">Monthly Revenue
+        <ngx-charts-bar-vertical class="barchart" 
+        [view]="[250,250]"
+        [results]="incomeData"
+        [legendTitle]="'Product Sale Chart'"
+        [customColors]="incomechartcolor"
+    
+        [yAxisLabel]="'Sale'"
+        [showXAxisLabel]="false"
+        [showYAxisLabel]="false"
+        [xAxis]="false"
+        [yAxis]="false"
+        [gradient]="true">
+</ngx-charts-bar-vertical>
+        <div class="addcommunity" (click)="gotoaddcommunity()">+ Add Community</div>
     </div>
+    
 </div>
