@@ -1,0 +1,28 @@
+
+<ion-content [fullscreen]="true">
+  <div class="paymentheaderdiv">
+    <img src="assets\transfer.jpg">
+  </div>
+  <div class ="paymentdesc">
+    Your monthly payment is pending. Please use the secure gateway to complete the payment.
+  </div>
+  <div class="imagearea">
+    </div>
+    <div class="mainarea">
+    <ion-row class="amountrow">
+      <ion-col class="amounttitle" size="8">Amount to be paid</ion-col>
+      <ion-col class="amountvalue">$200</ion-col>
+    </ion-row>
+    <ion-row class="installementrow">
+      <ion-col class="insttitle" size="8">Installment num</ion-col>
+      <ion-col class="instvalue">10</ion-col>
+    </ion-row>
+    <ion-row class="installementrow">
+      <ion-col class="insttitle" size="8">Due Date</ion-col>
+      <ion-col class="instvalue">15/04/2022</ion-col>
+    </ion-row>
+  </div>
+</ion-content>
+<ion-footer>
+  <div class="submit" (click)="doPayment()">Make Payment</div>
+</ion-footer>

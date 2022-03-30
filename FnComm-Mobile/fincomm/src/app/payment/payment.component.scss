@@ -1,0 +1,88 @@
+
+.toolbarstyle{
+    border: none;
+    --background: linear-gradient(90deg, #DA72D6 0%, #CF13D2 100%, rgba(133, 45, 118, 0) 60%);
+    ion-title{
+        text-align: left;
+        padding: 0px;
+        margin: 0px 15px;
+    }
+    ion-icon{
+        font-size: 20px;
+    }
+}
+
+ion-content{
+    --ion-background-color:#ffffff;
+    --overflow: scroll;
+    padding: 0px;
+    .paymentheaderdiv{
+        background-color: white;
+       // background-image: url('../../assets/Shapes.png');
+        color: #202124;
+        background-repeat: no-repeat;
+        font-weight: 600;
+      //  padding: 35px 20px 35px 25px;
+        background-position: -33px -38px;
+    }
+    .paymentdesc{
+        font-size: 13px;
+        line-height: 23px;
+        color: #202124;
+        margin: 30px 25px;
+        opacity: .8;
+    }
+    .imagearea{
+        margin: 20px auto;
+        text-align: center;
+    }
+    .mainarea{
+        padding: 30px 20px;
+        color: #202124;
+        border-bottom: 1px solid #202124;
+        
+        border-top: 1px solid #202124;
+        .amountrow{
+           
+            .amounttitle{
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 17px;
+                opacity: .8;
+            }
+            .amountvalue{
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+        .installementrow{
+            .insttitle{
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 17px;
+                opacity: .8;
+            }
+            .instvalue{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                opacity: .8;
+            }
+        }
+    }
+}
+
+.submit{
+    background: #6D5FFD;
+    border-radius: 8px;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto 10px auto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-indent: 5px;
+}

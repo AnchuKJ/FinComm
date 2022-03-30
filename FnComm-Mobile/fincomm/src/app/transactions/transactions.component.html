@@ -1,0 +1,36 @@
+<ion-content [fullscreen]="true">
+  <div class="tranheaderdiv">
+    Recent Transactions
+  </div>
+  <div class="transactiondiv">
+    <ion-row>
+      <ion-col>
+        <div class="trantitle"></div>
+      </ion-col>
+      <ion-col class="mytransactions">
+          <ion-checkbox  checked ></ion-checkbox>
+          <ion-label>Show only my transactions</ion-label>
+      </ion-col>
+    </ion-row>      
+    <ion-row>
+      <ion-col><div class="tranmenudiv selected">All</div></ion-col>
+      <ion-col><div class="tranmenudiv" (click)="launchTransaction()">Transfer</div></ion-col>
+      <ion-col><div class="tranmenudiv">Withdraw</div></ion-col>
+      <ion-col><div class="tranmenudiv">Lot Win</div></ion-col>
+      <ion-col><div class="tranmenudiv">More</div></ion-col>
+    </ion-row>
+  </div>
+  <div *ngFor="let tran of tranList" class="trandetaildiv">
+      <ion-row>
+        <ion-col size="2"><img [src]="tran.avatar"></ion-col>
+        <ion-col size="8">
+          <div class="title">{{tran.title}}</div>
+          <div class="username">{{tran.user}}</div>
+          <div class="trandate">{{tran.trandate}}</div>
+        </ion-col>
+        <ion-col size="2" class="amount">
+          ${{tran.amount}}
+        </ion-col>
+      </ion-row>
+  </div>
+</ion-content>

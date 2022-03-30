@@ -77,6 +77,7 @@
                     text-align: center;
                     border-left: 1px solid #ECECEC;
                     margin: auto;
+                    min-width: 200px;                
                     .submitdiv{
                         width: 136px;
                         height: 30px;
@@ -121,7 +122,7 @@
                 padding: 0px 15px 15px;
                 flex-wrap: wrap;
                 .votingdiv{
-                    width: 270px;
+                    min-width: 180px;
                     height: 180px;
                     box-shadow: 0px 14px 40px rgba(109, 141, 173, 0.25);
                     -webkit-box-shadow: 11px 9px 21px 0px rgba(130,130,130,0.49);

@@ -1,0 +1,13 @@
+ion-content{
+    --ion-background-color:#F5F5F5;
+    --overflow: hidden;
+    padding: 0px;
+}
+
+.new-background-color{
+    --background: white;
+    border: none;
+    ion-icon{
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,78 @@
+
+<ion-content [fullscreen]="true">
+  <div class="mainarea">
+    <div class="headerdiv">
+        <ion-row class="userdiv">
+          <ion-col size="3"><img src="assets/user.png"></ion-col>
+          <ion-col class="userNamediv">
+            <div class="namesection">Esther Howard</div>
+            <div class="accountdiv">My Profile<ion-icon name="chevron-down-outline"></ion-icon></div>
+          </ion-col>
+        </ion-row>
+        <ion-row class="balancediv">
+          <ion-col size="7" class="balancetitle">Balance</ion-col>
+          <ion-col class="balancevalue">$2,000.00</ion-col>
+        </ion-row>
+        <ion-row class="paymentdata">
+          <ion-col size="2.8" class="balancetitle">Monthly Pay</ion-col>
+          <ion-col size="2.5" class="balancevalue">$200.00</ion-col>
+          <ion-col size="4" class="balancetitle">Payment Due date</ion-col>
+          <ion-col class="balancevalue">12/04/2022</ion-col>
+        </ion-row>
+        <ion-row class="menudiv">
+          <ion-col>
+            <div (click)="doPayment()">
+              <img src="assets/option1.png">
+            </div>
+            <div class="menupadding">Transfer</div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <img src="assets/option2.png">
+            </div>
+            <div class="menupadding">Withdraw</div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <img src="assets/option3.png">
+            </div>
+            <div class="menupadding">Request Loan</div>
+          </ion-col>
+
+          <ion-col>
+            <div>
+              <img src="assets/option4.png">
+            </div>
+            <div class="menupadding">More</div>
+          </ion-col>
+        </ion-row>
+    </div>
+   <div class="communitybrief">
+    <ion-row>
+      <ion-col size="3"><img src="assets/communityimage.png"></ion-col>
+      <ion-col class="details">
+        <div class="title">Welfare Group</div>
+        <div class="description">Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. 
+          Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.</div>
+      </ion-col>
+    </ion-row>
+   </div>
+    <div>
+      <div class="summarytitle">Community Summary</div>
+      <ion-row>
+        <ion-col size="3.5" class="doughnutchart">
+          <canvas #pieChart1></canvas>
+        </ion-col>
+        <ion-col size="3.5" class="doughnutchart">
+          <canvas #pieChart2></canvas>
+        </ion-col>
+        <ion-col size="3.5" class="doughnutchart">
+          <canvas #pieChart3></canvas>
+        </ion-col>
+      </ion-row>        
+    </div>
+    <div>
+      <canvas #barChart></canvas>
+    </div>
+  </div>
+</ion-content>  

@@ -1,0 +1,125 @@
+.new-background-color{
+    --background: white;
+    border: none;
+    ion-icon{
+        font-size: 20px;
+    }
+}
+
+ion-content{
+    --ion-background-color:#F5F5F5;
+    --overflow: scroll;
+    padding: 0px;
+    ion-card{
+        --ion-card-background-color:white;
+    }
+    .mainarea{
+        .headerdiv{
+            background-position: left;
+            background-repeat:no-repeat ;
+            background-size: cover;
+            background-color: #CF13D2;
+            background-image: url('../../assets/header.png');
+
+            .userdiv{
+                padding: 20px 20px 0px 20px;
+                img{
+                    width: 90px;
+                }
+                .userNamediv{
+                    color: white;
+                    padding-top: 22px;
+                    .namesection{
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 17px;
+                    }
+                    .accountdiv{
+                        font-weight: 300;
+                        font-size: 12px;
+                        line-height: 15px;
+                        opacity: 0.5;
+                        padding-top: 5px;
+                        ion-icon{
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+
+            .balancediv{
+                padding:0px 20px;
+                .balancetitle{
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    opacity: .8;
+                }
+                .balancevalue{
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+            }
+
+            .paymentdata{
+                padding:0px 20px;
+                .balancetitle{
+                    font-weight: 500;
+                    font-size: 12px;
+                    opacity: .8;
+                }
+                .balancevalue{
+                    font-weight: 600;
+                    font-size: 12px;
+                }
+            }
+
+            .menudiv{
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 15px;
+                text-align: center;
+                padding: 10px 0px 10px 0px;
+                .menupadding{
+                    padding-top: 5px;
+                }
+            }
+        }
+
+        .communitybrief{
+            margin: 10px 10px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 11px 9px 21px 0px rgba(130,130,130,0.49);
+            .details{
+                color:#000000;
+                vertical-align: middle;
+                .title{
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 17px;
+                    margin-top: 5px;
+                }
+                .description{
+                    font-weight: 500;
+                    font-size: 11px;
+                    line-height: 17px;
+                }
+            }
+        }
+        .summarytitle{
+            margin: 15px 10px 0px 10px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #1a1a1b;
+        }
+        .doughnutchart{
+            border-radius: 10px;
+            margin: 5px 5px;
+            box-shadow: 11px 9px 21px 0px rgba(130,130,130,0.49);
+        }
+       
+    }
+}

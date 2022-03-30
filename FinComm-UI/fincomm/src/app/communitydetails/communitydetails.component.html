@@ -28,12 +28,12 @@
                 </div>
                 <div class="detailsdiv">
                     <div fxLayout="row">
-                        <div class="box1 box">
+                        <div fxFlex="50" class="box1 box">
                             <div class="circlediv"><mat-icon>volunteer_activism</mat-icon></div>
                             <div class="boxvalue">${{communitydetails.monthlysavings}}</div>
                             <div class="boxtitle">Monthly Savings</div>
                         </div>
-                        <div class="box2 box" routerLink="/loandetails">
+                        <div fxFlex="50" class="box2 box" routerLink="/loandetails">
                             <div class="circlediv"><mat-icon>account_balance</mat-icon></div>
                            <!--<div class="actiondiv"><mat-icon [matMenuTriggerFor]="menu" >more_vert</mat-icon></div>
                             <mat-menu #menu="matMenu">
@@ -44,12 +44,12 @@
                         </div>
                     </div>
                     <div fxLayout="row">
-                        <div class="box3 box">
+                        <div fxFlex="50" class="box3 box">
                             <div class="circlediv"><mat-icon>emoji_events</mat-icon></div>
                             <div class="boxvalue">${{communitydetails.lotamount}}</div>
                             <div class="boxtitle">Lot Amount</div>
                         </div>
-                        <div class="box4 box">
+                        <div fxFlex="50" class="box4 box">
                             <div class="circlediv"><mat-icon>attractions</mat-icon></div>
                             <div class="boxvalue">{{communitydetails.nextlotdate}}</div>
                             <div class="boxtitle">Next Lot Date</div>
@@ -77,7 +77,7 @@
     <div fxFlex="32" class="rightdiv">
         <div class="righttitle">Community total</div>
         <div class="rightchart" fxLayout="row">
-            <div class="chartdiv">
+            <div fxFlex="60" class="chartdiv">
                 <ngx-charts-pie-chart 
                     [results]="communitytotal"
                     [legend]="true"
@@ -90,17 +90,17 @@
                     [gradient]="true">
                 </ngx-charts-pie-chart>
             </div>
-            <div class="charttotalvalue">
+            <div fxFlex="40" class="charttotalvalue">
                 <div fxLayout="row" class="chartdetail">
                     <mat-icon>account_balance</mat-icon>
-                    <div>
+                    <div fxFlex="80">
                         <div class="charttotalvalue">$12000</div>
                         <div class="charttitle">Savings</div>
                     </div>
                 </div>
                 <div fxLayout="row" class="chartdetail">
                     <mat-icon>real_estate_agent</mat-icon>
-                    <div>
+                    <div fxFlex="80">
                         <div class="charttotalvalue">$5000</div>
                         <div class="charttitle">Loan</div>
                     </div>

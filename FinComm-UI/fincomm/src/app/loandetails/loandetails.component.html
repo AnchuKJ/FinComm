@@ -28,7 +28,7 @@
         <div class="loanvoting">
             <div class="titlediv">Vote for loan requests</div>
             <div fxLayout="row" class="loanvotingmain">
-                <div class="votingdiv" *ngFor="let loan of votingloans">
+                <div fxFlex="30" class="votingdiv" *ngFor="let loan of votingloans">
                     <img [src]="loan.avatar">
                     <div class="namediv">{{loan.name}}</div>
                     <div class ="amountdiv">{{loan.amount}}</div>

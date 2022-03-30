@@ -1,0 +1,32 @@
+
+ion-content{
+    --ion-background-color:#F5F5F5;
+    --overflow: scroll;
+    padding: 0px;
+
+    .successdiv{
+        text-align: center;
+        margin: 30px auto;
+        .title{
+            font-weight: 400;
+            font-size: 34px;
+            line-height: 43px;
+            letter-spacing: 0.005em;
+            color: #212121;
+        }
+        .description{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.005em;
+            color: #202124;                 
+        }
+        .donediv{
+            width: 30%;
+            margin: 20px auto;
+            background: #6D5FFD;
+            border-radius: 10px;
+            padding: 5px;
+        }
+    }
+}
