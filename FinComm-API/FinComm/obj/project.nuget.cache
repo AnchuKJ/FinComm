@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "H2tDbxGsxDcG6ze8MofzunXjchjD2EIMLRc08LgPPDx6n4q+VBtsS3AxBGKlF6i1g3XJ8i8BkQ453BTMuzCsww==",
+  "success": true,
+  "projectFilePath": "F:\\Hackthon\\2022\\Workspace\\FinComm\\FinComm-API\\FinComm\\FinComm.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ganes\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\ganes\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\ganes\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\ganes\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\ganes\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\ganes\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

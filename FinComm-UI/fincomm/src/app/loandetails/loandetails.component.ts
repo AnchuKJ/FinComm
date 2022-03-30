@@ -9,8 +9,8 @@ import { LegendPosition } from '@swimlane/ngx-charts';
 export class LoandetailsComponent implements OnInit {
 
   loanrequests = [
-    {name:'Eleanor Pena', avatar:'assets/user4.png', status:'PENDING', requestdate:'10/01/2022', amount:'2000', votes:3, isnew:0},
-    {name:'Jasmine Favin', avatar:'assets/user2.png', status:'OPEN', requestdate:'10/01/2022', amount:'2000', votes:0, isnew:1}
+    {name:'Eleanor Pena', avatar:'assets/user4.png', status:'PENDING', requestdate:'10/01/2022', amount:'2000', votes:3, isnew:0, score:8},
+    {name:'Jasmine Favin', avatar:'assets/user2.png', status:'OPEN', requestdate:'10/01/2022', amount:'2000', votes:0, isnew:1, score:6}
   ];
 
   votingloans = [

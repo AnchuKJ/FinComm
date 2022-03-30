@@ -8,11 +8,12 @@
                     <div fxFlex="40" class="requestdata">
                         <div class="requestowner">{{loanrequest.name}}</div>
                         <div class="statusdiv">{{loanrequest.status}}</div>
-                        <div class="requestdatediv">Requested on {{loanrequest.requestdate}}</div>
+                        <div class="requestdatediv">Requested on {{loanrequest.requestdate}}</div>                        
                     </div>
                     <div fxFlex="20" class="amountmaindiv">
                         <div class="amountdiv">${{loanrequest.amount}}</div>
-                        <div *ngIf="!loanrequest.isnew" class="votesdiv">Votes: {{loanrequest.votes}}</div>
+                        <div *ngIf="!loanrequest.isnew" class="votesdiv">Votes: {{loanrequest.votes}}</div>                        
+                        <div class="votesdiv">Repayment Score: {{loanrequest.score}}</div>
                     </div>
                     <div *ngIf="!loanrequest.isnew" fxFlex="20" class="buttondiv">
                         <div class="submitdiv">Approve</div>
@@ -35,7 +36,7 @@
                     <div fxLayout="row" class="votingicon">
                         <mat-icon class="up">thumb_up</mat-icon>
                         <mat-icon class="down">thumb_down</mat-icon>
-                    </div>
+                    </div>                  
                     <div class="votedate">Voting ends on {{loan.enddate}}</div>
                 </div>
             </div>

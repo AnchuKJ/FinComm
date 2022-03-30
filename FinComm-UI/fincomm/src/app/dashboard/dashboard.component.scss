@@ -1,200 +1,110 @@
-.welcomediv {
-  //position: absolute;
-  width: 160px;
-  height: 31px;
-  left: 285px;
-  top: 118px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600 bold;
-  font-size: 22px;
-  margin-left: 50px;
-  line-height: 143%;
-  letter-spacing: -0.03em;
-  color: #8777e0;
-}
-
-.communitydiv {
-  width: 136px;
-                        height: 30px;
-                        text-align: center;
-                        font-weight: 500;
-                        font-size: 14px;
-                        line-height: 143%;
-                        color: #FFFFFF;
-                        background: #8777E0;
-                        border-radius: 21px;
-                        padding-top: 8px;
-                        margin: 0px auto;
-                        letter-spacing: 0.04em;
-}
-
-element.style {
-  margin-top: 10px;
-}
-
-.activediv {
-  position: absolute;
-  width: 158px;
-  height: 23px;
-  left: 310px;
-  top: 220px;
-
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 143%;
-  margin-left: 80px;
-
-
-  /* identical to box height, or 23px */
-
-  letter-spacing: -0.03em;
-
-  color: #000000;
-  
-}
-.navigate{
-  margin-left: 600px;
-  margin-top: 100px;
-
-}
-
-
-.linediv {
-  position: absolute;
-
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  /* identical to box height */
-
-  display: flex;
-  align-items: center;
-  margin-top: -20px;
-
-  color: #8f8f8f;
-  mat-form-field{
-    width: 700px;
+app-dashboard{
+  .welcomediv {
+    //position: absolute;
+    width: 160px;
+    height: 31px;
+    left: 285px;
+    top: 118px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600 bold;
+    font-size: 22px;
+    margin-left: 50px;
+    line-height: 143%;
+    letter-spacing: -0.03em;
+    color: #8777e0;
   }
-}
-.rectanglediv{
-text-align: center;
-  width: 256px;
-  height: 322px;  
-  background: linear-gradient(180deg, rgba(169, 133, 223, 0.71) 0%, #A985DF 99.98%);
-  box-shadow: 0px 14px 40px rgba(42, 80, 118, 0.25);
-  border-radius: 21px;
-  margin-top: 10px;
-  margin-left: 40px;
 
-}
-image1{
-  width: 90px;
-  height: 100px;
-  left: 488px;
-  top: 317px;
-}
-p{
-width: 112px;
-height: 23px;
-left: 477px;
-top: 418px;
-margin-left: 75px;
+  .communitydiv {
+    width: 136px;
+    height: 30px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    color: #FFFFFF;
+    background: #8777E0;
+    border-radius: 21px;
+    padding-top: 8px;
+    margin: 0px auto;
+    letter-spacing: 0.04em;
+  }
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 143%;
-/* identical to box height, or 23px */
+  element.style {
+    margin-top: 10px;
+  }
 
-text-align: center;
-letter-spacing: -0.03em;
+  .activediv {
+    position: absolute;
+    width: 158px;
+    height: 23px;
+    left: 310px;
+    top: 220px;
 
-color: #FFFFFF;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 143%;
+    margin-left: 80px;
 
-}
-.activestatus{
-  width: 120px;
-  height: 30px;
+
+    /* identical to box height, or 23px */
+
+    letter-spacing: -0.03em;
+
+    color: #000000;
+    
+  }
+  .navigate{
+    margin-left: 600px;
+    margin-top: 100px;
+
+  }
+
+
+  .linediv {
+    position: absolute;
+
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+
+    color: #8f8f8f;
+    mat-form-field{
+      width: 700px;
+    }
+  }
+  .rectanglediv{
   text-align: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 143%;
-  color: #8777e0;
-  background: #ffffff;
-  border-radius: 21px;
-  padding-top: 8px;
-  margin: 0px auto;
-  letter-spacing: 0.04em;
-}
-.savings{
-width: 104px;
-margin-top: -10px;
-height: 41px;
-left: 481px;
-top: 480px;
-margin-left: 80px;
+    width: 256px;
+    height: 322px;  
+    background: linear-gradient(180deg, rgba(169, 133, 223, 0.71) 0%, #A985DF 99.98%);
+    box-shadow: 0px 14px 40px rgba(42, 80, 118, 0.25);
+    border-radius: 21px;
+    margin-top: 10px;
+    margin-left: 40px;
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 41px;
-/* identical to box height, or 293% */
-
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.06em;
-
-color: #FFFFFF;
-
-}
-.loantotal{
-width: 124px;
-height: 41px;
-left: 475px;
-top: 508px;
-margin-left: 70px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 41px;
-/* identical to box height, or 293% */
-
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.06em;
-
-color: #FFFFFF;
-}
-.loan{
-  width: 120px;
-  height: 30px;
-  text-align: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 143%;
-  color: #8777e0;
-  background: #FFFFFF;
-  border-radius: 21px;
-  padding-top: 8px;
-  margin: 0px auto;
-  letter-spacing: 0.04em;
-}
-.carediv{
-  width: 124px;
+  }
+  image1{
+    width: 90px;
+    height: 100px;
+    left: 488px;
+    top: 317px;
+  }
+  p{
+  width: 112px;
   height: 23px;
-  left: 760px;
+  left: 477px;
   top: 418px;
+  margin-left: 75px;
 
   font-family: 'Poppins';
   font-style: normal;
@@ -206,30 +116,262 @@ color: #FFFFFF;
   text-align: center;
   letter-spacing: -0.03em;
 
-  color: #000000;
-}
-.open{
-  width: 120px;
-  height: 30px;
-  text-align: center;
+  color: #FFFFFF;
+
+  }
+  .activestatus{
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    color: #8777e0;
+    background: #ffffff;
+    border-radius: 21px;
+    padding-top: 8px;
+    margin: 0px auto;
+    letter-spacing: 0.04em;
+  }
+  .savings{
+  width: 104px;
+  margin-top: -10px;
+  height: 41px;
+  left: 481px;
+  top: 480px;
+  margin-left: 80px;
+
+  font-family: 'Poppins';
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 143%;
-  color: #FFFFFF;
-  background: #8777E0;
-  border-radius: 21px;
-  padding-top: 8px;
-  margin: 0px auto;
-  letter-spacing: 0.04em;
+  line-height: 41px;
+  /* identical to box height, or 293% */
 
-}
-.startdiv{
-  width: 155px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #FFFFFF;
+
+  }
+  .loantotal{
+  width: 124px;
+  height: 41px;
+  left: 475px;
+  top: 508px;
+  margin-left: 70px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 41px;
+  /* identical to box height, or 293% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #FFFFFF;
+  }
+  .loan{
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    color: #8777e0;
+    background: #FFFFFF;
+    border-radius: 21px;
+    padding-top: 8px;
+    margin: 0px auto;
+    letter-spacing: 0.04em;
+  }
+  .carediv{
+    width: 124px;
+    height: 23px;
+    left: 760px;
+    top: 418px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 143%;
+    /* identical to box height, or 23px */
+
+    text-align: center;
+    letter-spacing: -0.03em;
+
+    color: #000000;
+  }
+  .open{
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    color: #FFFFFF;
+    background: #8777E0;
+    border-radius: 21px;
+    padding-top: 8px;
+    margin: 0px auto;
+    letter-spacing: 0.04em;
+
+  }
+  .startdiv{
+    width: 155px;
+    height: 20px;
+    left: 739px;
+    top: 485px;
+    margin-left: 55px;
+    margin-top: 20px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    /* identical to box height, or 20px */
+
+
+    color: #8F8F8F;
+  }
+  .membersdiv{
+    width: 136px;
   height: 20px;
-  left: 739px;
-  top: 485px;
-  margin-left: 55px;
+  left: 748px;
+  top: 514px;
+  margin-left: 75px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  /* identical to box height, or 20px */
+
+
+  color: #8F8F8F;
+  }
+  .invitationdiv{
+    width: 136px;
+    height: 30px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    color: #FFFFFF;
+    background: #8777E0;
+    border-radius: 21px;
+    padding-top: 8px;
+    margin-top: 20px;
+    margin-left: 60px;
+    letter-spacing: 0.04em;
+
+  }
+  .secondrectanglediv{
+    text-align: center;
+    position: absolute;
+    margin-top: 100px;
+    width: 256px;
+    height: 322px;
+    left: 694px;
+    top: 292px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 14px 40px rgba(109, 141, 173, 0.25);
+    border-radius: 21px;
+    margin-top: -35px;
+    margin-left: 20px;
+
+  }
+  .Invitations{
+  width: 82px;
+  height: 23px;
+  left: 405px;
+  top: 649px;
+  margin-left: 80px;
   margin-top: 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 143%;
+  /* identical to box height, or 23px */
+
+  letter-spacing: -0.03em;
+
+  color: #000000;
+
+  }
+  .invitationrectangle{
+  width: 545px;
+  height: 140px;
+  left: 405px;
+  top: 687px;
+  margin-left: 45px;
+  margin-top: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 14px 40px rgba(109, 141, 173, 0.25);
+  border-radius: 21px;
+  }
+  .cancerrelief{
+  width: 103px;
+  height: 23px;
+  left: 551px;
+  top: 712px;
+  margin-left: 50px;
+  margin-top: 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 143%;
+  /* identical to box height, or 23px */
+
+  letter-spacing: -0.03em;
+
+  color: #000000;
+  }
+  .startdate{
+                          width: 136px;
+                          padding-top: 10px;
+                          margin-left: -20px;
+                          margin-top: 10px;
+                          height: 30px;
+                          text-align: center;
+                          font-weight: 500;
+                          font-size: 14px;
+                          line-height: 143%;
+                          color: #FFFFFF;
+                          background: #8777E0;
+                          border-radius: 21px;
+                          letter-spacing: 0.04em;
+  }
+  .startdate2{
+    width: 136px;
+    margin-top: 20px;
+    height: 35px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    color: #FFFFFF;
+    background: #8777e0;
+    border-radius: 21px;
+    letter-spacing: 0.05em;
+  }
+  .communityleader{
+    margin-top: 20px;
+    width: 216px;
+  height: 20px;
+  left: 554px;
+  top: 784px;
 
   font-family: 'Poppins';
   font-style: normal;
@@ -240,282 +382,199 @@ color: #FFFFFF;
 
 
   color: #8F8F8F;
-}
-.membersdiv{
-  width: 136px;
-height: 20px;
-left: 748px;
-top: 514px;
-margin-left: 75px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 143%;
-/* identical to box height, or 20px */
+  }
+  .communityleader2{
+    margin-top: 10px;
+    width: 216px;
+  height: 20px;
+  left: 554px;
+  top: 784px;
 
-
-color: #8F8F8F;
-}
-.invitationdiv{
-  width: 136px;
-  height: 30px;
-  text-align: center;
-  font-weight: 500;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 143%;
-  color: #FFFFFF;
+  /* identical to box height, or 20px */
+
+
+  color: #8F8F8F;
+  }
+  .acceptrectangle{
+    text-align: center;
+    margin-left:350px;
+    margin-top: -38px;
+  width: 124px;
+  height: 32.2px;
+  left: 817px;
+  top: 721px;
+  font-size: medium;
   background: #8777E0;
   border-radius: 21px;
-  padding-top: 8px;
-  margin-top: 20px;
-  margin-left: 60px;
-  letter-spacing: 0.04em;
-
-}
-.secondrectanglediv{
-  text-align: center;
-  position: absolute;
-  margin-top: 100px;
-  width: 256px;
-  height: 322px;
-  left: 694px;
-  top: 292px;
+  }
+  .thumbsup{
+    margin-left: 350px;
+  left: 4.17%;
+  right: 4.17%;
+  top: 4.17%;
+  bottom: 12.5%;
 
   background: #FFFFFF;
-  box-shadow: 0px 14px 40px rgba(109, 141, 173, 0.25);
-  border-radius: 21px;
-  margin-top: -35px;
-  margin-left: 20px;
+  }
+  .ups{
+    color: #8B2CF5;
+  }
+  .imageinvitation{
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 90px;
+    height: 90px;
+    left: 430px;
+    top: 712px;
+    
+  }
+  .acceptbutton{
+                      
+    width: 136px;
+    padding-top: 10px;
+    margin-left: 225px;
+    margin-top: -70px;
+    height: 30px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    color: #FFFFFF;
+    background: #8777E0;
+    border-radius: 21px;
+    letter-spacing: 0.04em;
 
-}
-.Invitations{
-width: 82px;
-height: 23px;
-left: 405px;
-top: 649px;
-margin-left: 80px;
-margin-top: 20px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 143%;
-/* identical to box height, or 23px */
+  }
+  .acceptbutton2{
+    width: 136px;
+    padding-top: 10px;
+    margin-left: 250px;
+    margin-top: -110px;
+    height: 30px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    color: #FFFFFF;
+    background: #8777E0;
+    border-radius: 21px;
+    letter-spacing: 0.04em;
+  }
+  .rejectbutton{
+    
+    width: 136px;
+    padding-top: 10px;
+    margin-left: 230px;
+    margin-top: 30px;
+    height: 30px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    color: #FFFFFF;
+    background: #4b4b4d;
+    border-radius: 21px;
+    padding-top: 8px;
+    
+    letter-spacing: 0.04em;
+  }
+  .rejectbutton2{
+    width: 136px;
+    padding-top: 10px;
+    margin-left: 250px;
+    margin-top: 25px;
+    height: 30px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    color: #FFFFFF;
+    background: #4b4b4d;
+    border-radius: 21px;
+    padding-top: 8px;
+    
+    letter-spacing: 0.04em;
+  }
+  .calendardiv {
+    position: absolute;
+    width: 270px;
+    height: 140px;
+    left: 1022px;
+    top: 148px;
 
-letter-spacing: -0.03em;
+    background: #ffffff;
+    border-radius: 21px;
+  }
+  .titlecalendar{
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 108px;
+    height: 23px;
+    left: 1033px;
+    top: 111px;
 
-color: #000000;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 143%;
+    /* identical to box height, or 23px */
 
-}
-.invitationrectangle{
-width: 545px;
-height: 140px;
-left: 405px;
-top: 687px;
-margin-left: 45px;
-margin-top: 20px;
-background: #FFFFFF;
-box-shadow: 0px 14px 40px rgba(109, 141, 173, 0.25);
-border-radius: 21px;
-}
-.cancerrelief{
-width: 103px;
-height: 23px;
-left: 551px;
-top: 712px;
-margin-left: 50px;
-margin-top: 20px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 143%;
-/* identical to box height, or 23px */
+    letter-spacing: 0.02em;
 
-letter-spacing: -0.03em;
-
-color: #000000;
-}
-.startdate{
-                        width: 136px;
-                        padding-top: 10px;
-                        margin-left: -20px;
-                        margin-top: 10px;
-                        height: 30px;
-                        text-align: center;
-                        font-weight: 500;
-                        font-size: 14px;
-                        line-height: 143%;
-                        color: #FFFFFF;
-                        background: #8777E0;
-                        border-radius: 21px;
-                        letter-spacing: 0.04em;
-}
-.startdate2{
-   width: 136px;
-   margin-top: 20px;
-  height: 35px;
-   text-align: center;
-   font-weight: 500;
-   font-size: 14px;
-   line-height: 143%;
-   color: #FFFFFF;
-   background: #8777e0;
-   border-radius: 21px;
-   letter-spacing: 0.05em;
- }
-.communityleader{
-  margin-top: 20px;
-  width: 216px;
-height: 20px;
-left: 554px;
-top: 784px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 143%;
-/* identical to box height, or 20px */
-
-
-color: #8F8F8F;
-}
-.communityleader2{
-  margin-top: 10px;
-  width: 216px;
-height: 20px;
-left: 554px;
-top: 784px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 143%;
-/* identical to box height, or 20px */
-
-
-color: #8F8F8F;
-}
-.acceptrectangle{
-  text-align: center;
-  margin-left:350px;
-  margin-top: -38px;
-width: 124px;
-height: 32.2px;
-left: 817px;
-top: 721px;
-font-size: medium;
-background: #8777E0;
-border-radius: 21px;
-}
-.thumbsup{
-  margin-left: 350px;
-left: 4.17%;
-right: 4.17%;
-top: 4.17%;
-bottom: 12.5%;
-
-background: #FFFFFF;
-}
-.ups{
-  color: #8B2CF5;
-}
-.imageinvitation{
-  margin-left: 40px;
-  margin-top: 20px;
-  width: 90px;
-  height: 90px;
-  left: 430px;
-  top: 712px;
-  
-}
-.acceptbutton{
-                     
-  width: 136px;
-  padding-top: 10px;
-  margin-left: 225px;
-  margin-top: -70px;
-  height: 30px;
-  text-align: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 143%;
-  color: #FFFFFF;
-  background: #8777E0;
-  border-radius: 21px;
-  letter-spacing: 0.04em;
-
-}
-.acceptbutton2{
-  width: 136px;
-  padding-top: 10px;
-  margin-left: 250px;
-  margin-top: -110px;
-  height: 30px;
-  text-align: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 143%;
-  color: #FFFFFF;
-  background: #8777E0;
-  border-radius: 21px;
-  letter-spacing: 0.04em;
-}
-.rejectbutton{
-  
-  width: 136px;
-  padding-top: 10px;
-  margin-left: 230px;
-  margin-top: 30px;
-  height: 30px;
-  text-align: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 143%;
-  color: #FFFFFF;
-  background: #4b4b4d;
-  border-radius: 21px;
-  padding-top: 8px;
-  
-  letter-spacing: 0.04em;
-}
-.rejectbutton2{
-  width: 136px;
-  padding-top: 10px;
-  margin-left: 250px;
-  margin-top: 25px;
-  height: 30px;
-  text-align: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 143%;
-  color: #FFFFFF;
-  background: #4b4b4d;
-  border-radius: 21px;
-  padding-top: 8px;
-  
-  letter-spacing: 0.04em;
-}
-.calendardiv {
-  position: absolute;
-  width: 270px;
+  color: #000000;
+  }
+  .invitationrectangle2{
+    width:545px;
   height: 140px;
-  left: 1022px;
-  top: 148px;
-
-  background: #ffffff;
-  border-radius: 21px;
-}
-.titlecalendar{
-  margin-left: 30px;
+  left: 405px;
+  top: 687px;
+  margin-left: 45px;
   margin-top: 20px;
-  width: 108px;
+  background: #FFFFFF;
+  box-shadow: 0px 14px 40px rgba(23, 90, 156, 0.25);
+  border-radius: 21px
+  }
+  .imageinvitation2{
+    margin-left: 35px;
+    margin-top: 20px;
+    width: 90px;
+    height: 90px;
+    left: 430px;
+    top: 883px;
+    
+  }
+  .ecocommunity{
+    width: 175px;
+    margin-left: 20px;
+    margin-top: 25px;
   height: 23px;
-  left: 1033px;
-  top: 111px;
+  left: 551px;
+  top: 883px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 143%;
+  /* identical to box height, or 23px */
+
+  letter-spacing: -0.03em;
+
+  color: #000000;
+  }
+  .Analytics{
+    margin-left: 700px;
+    margin-top: -400px;
+    width: 79px;
+    height: 23px;
+    left: 1024px;
+    top: 506px;
 
   font-family: 'Poppins';
   font-style: normal;
@@ -526,77 +585,39 @@ background: #FFFFFF;
 
   letter-spacing: 0.02em;
 
-color: #000000;
-}
-.invitationrectangle2{
-  width:545px;
-height: 140px;
-left: 405px;
-top: 687px;
-margin-left: 45px;
-margin-top: 20px;
-background: #FFFFFF;
-box-shadow: 0px 14px 40px rgba(23, 90, 156, 0.25);
-border-radius: 21px
-}
-.imageinvitation2{
-  margin-left: 35px;
-  margin-top: 20px;
-  width: 90px;
-  height: 90px;
-  left: 430px;
-  top: 883px;
-  
-}
-.ecocommunity{
-  width: 175px;
-  margin-left: 20px;
-  margin-top: 25px;
-height: 23px;
-left: 551px;
-top: 883px;
+  color: #000000;
+  }
+  .piechart{
+    margin-top: -20px;
+  }
+  .savingsrate{
+    margin-left: 50px;
+    
+    position: absolute;
+    width: 148px;
+    height: 23px;
+    left: 1229px;
+    top: 581px;
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 143%;
-/* identical to box height, or 23px */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 143%;
+    /* identical to box height, or 23px */
 
-letter-spacing: -0.03em;
+    letter-spacing: 0.02em;
 
-color: #000000;
-}
-.Analytics{
-  margin-left: 700px;
-  margin-top: -400px;
-  width: 79px;
-  height: 23px;
-  left: 1024px;
-  top: 506px;
+    color: #000000;
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 143%;
-/* identical to box height, or 23px */
-
-letter-spacing: 0.02em;
-
-color: #000000;
-}
-.piechart{
-  margin-top: -20px;
-}
-.savingsrate{
-  margin-left: 50px;
-  
+  }
+  .loanrate{
+    margin-left: 50px;
   position: absolute;
-  width: 148px;
+  width: 86px;
   height: 23px;
   left: 1229px;
-  top: 581px;
+  top: 617px;
 
   font-family: 'Poppins';
   font-style: normal;
@@ -608,64 +629,45 @@ color: #000000;
   letter-spacing: 0.02em;
 
   color: #000000;
+  }
+  .MonthlyRevenue{
+    margin-left: 700px;
+    margin-top: 250px;
+    width: 145px;
+  height: 23px;
+  left: 1024px;
+  top: 722px;
 
-}
-.loanrate{
-  margin-left: 50px;
-position: absolute;
-width: 86px;
-height: 23px;
-left: 1229px;
-top: 617px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 143%;
-/* identical to box height, or 23px */
-
-letter-spacing: 0.02em;
-
-color: #000000;
-}
-.MonthlyRevenue{
-  margin-left: 700px;
-  margin-top: 250px;
-  width: 145px;
-height: 23px;
-left: 1024px;
-top: 722px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 143%;
-/* identical to box height, or 23px */
-
-letter-spacing: 0.02em;
-
-color: #000000;
-}
-.barchart{
-background: linear-gradient(180deg, #8777E0 0%, #81A1DF 100%);
-background: linear-gradient(180deg, rgba(167, 129, 223, 0.8) 0%, #A781DF 100%);
-}
-.addcommunity{
-  width: 136px;
-  padding-top: 10px;
-  margin-left: 35px;
-  margin-top: 260px;
-  height: 30px;
-  text-align: center;
-  font-weight: 500;
-  font-size: 14px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
   line-height: 143%;
-  color: #FFFFFF;
-  background: #8777E0;
-  border-radius: 21px;
-  letter-spacing: 0.04em;
+  /* identical to box height, or 23px */
+
+  letter-spacing: 0.02em;
+
+  color: #000000;
+  }
+  .barchart{
+  background: linear-gradient(180deg, #8777E0 0%, #81A1DF 100%);
+  background: linear-gradient(180deg, rgba(167, 129, 223, 0.8) 0%, #A781DF 100%);
+  }
+  .addcommunity{
+    width: 136px;
+    padding-top: 10px;
+    margin-left: 35px;
+    margin-top: 260px;
+    height: 30px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    color: #FFFFFF;
+    background: #8777E0;
+    border-radius: 21px;
+    letter-spacing: 0.04em;
+  }
 }
 .custom-dialog-container {
   .mat-dialog-container{
