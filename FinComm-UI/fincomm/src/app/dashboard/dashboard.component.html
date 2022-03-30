@@ -3,7 +3,7 @@
         <div fxLayout="row">
             <div fxFlex="50" class="welcomediv">Welcome back</div>
             <div class="communitydiv">
-              <button onclick="gotoaddcommunity()">+ New Community</button></div>
+              <div (click)="gotoaddcommunity()">+ New Community</div></div>
              
         </div>
         <div class="linediv">
@@ -98,7 +98,7 @@
         [yAxis]="false"
         [gradient]="true">
 </ngx-charts-bar-vertical>
-        <div class="addcommunity" onclick="gotoaddcommunity()">+ Add Community</div>
+        <div class="addcommunity" (click)="gotoaddcommunity()">+ Add Community</div>
     </div>
     
 </div>

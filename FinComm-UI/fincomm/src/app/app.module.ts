@@ -17,6 +17,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { LoandetailsComponent } from './loandetails/loandetails.component';
 import { AddcommunityComponent } from './addcommunity/addcommunity.component';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { AddcommunityComponent } from './addcommunity/addcommunity.component';
     MatInputModule,
     MatMenuModule,
     NgxChartsModule,
+    MatDialogModule
   ],
   providers: [MatDatepickerModule],
   bootstrap: [AppComponent]

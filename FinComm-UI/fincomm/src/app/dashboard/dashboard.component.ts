@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { AddcommunityComponent } from '../addcommunity/addcommunity.component';
 
 @Component({
   selector: 'app-dashboard',
@@ -41,13 +43,21 @@ incomeData = [
   { name: "Jan 2021", value: 150000 },
   { name: "Feb 2021", value: 20000 }
 ];
-  constructor(public router:Router) {
+  constructor(public dialog:MatDialog) {
   
    }
 
   public gotoaddcommunity()
   {
-    this.router.navigate(['/addcommunity']);
+    const dialogRef = this.dialog.open(AddcommunityComponent,{height:'700px',width:'1400px',panelClass: 'custom-dialog-container'
+
+  });
+    
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+        
+    });
+
   }
   
   ngOnInit(): void {
