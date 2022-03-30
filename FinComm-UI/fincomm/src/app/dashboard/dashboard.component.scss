@@ -667,17 +667,13 @@ background: linear-gradient(180deg, rgba(167, 129, 223, 0.8) 0%, #A781DF 100%);
   border-radius: 21px;
   letter-spacing: 0.04em;
 }
-.custom-dialog-container .mat-dialog-container{
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  padding: 0px !important;
-  border-radius: 15px !important;
-  max-height: 100% !important;
-  min-width: 1130px;
-  overflow: hidden !important;
-
+.custom-dialog-container {
+  .mat-dialog-container{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    padding: 0px !important;
+    border-radius: 20px !important;
+    max-height: 100% !important;
+    overflow: hidden !important;
+  }
 }
 
-.mat-dialog-content{
-  max-height: 100% !important;
-  min-width: 1110px;
-}

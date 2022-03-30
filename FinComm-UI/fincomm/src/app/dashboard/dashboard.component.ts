@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { AddcommunityComponent } from '../addcommunity/addcommunity.component';
@@ -6,7 +6,8 @@ import { AddcommunityComponent } from '../addcommunity/addcommunity.component';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+  styleUrls: ['./dashboard.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class DashboardComponent implements OnInit {
 
@@ -49,7 +50,7 @@ incomeData = [
 
   public gotoaddcommunity()
   {
-    const dialogRef = this.dialog.open(AddcommunityComponent,{height:'700px',width:'1400px',panelClass: 'custom-dialog-container'
+    const dialogRef = this.dialog.open(AddcommunityComponent,{width:'1400px',panelClass: 'custom-dialog-container'
 
   });
     
