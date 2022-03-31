@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { FincommService } from '../fincomm.service';
 
 @Component({
   selector: 'app-payment',
@@ -8,11 +9,14 @@ import { Router } from '@angular/router';
 })
 export class PaymentComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private fincommservice: FincommService) { }
 
   ngOnInit() {}
 
+  public amount = 200;
   doPayment(){
-    this.router.navigateByUrl('success');
+    this.fincommservice.doTransaction(this.amount).subscribe(res=>{
+      this.router.navigateByUrl('success');
+    });
   }
 }
