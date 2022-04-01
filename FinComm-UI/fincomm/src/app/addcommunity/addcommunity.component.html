@@ -7,15 +7,120 @@
             <div class="rule1"><mat-icon >arrow_right_alt</mat-icon>If the number of joined members not meets the requirement until start date, Bank have the authority to cancel this community.</div>
             <div class="rule1"><mat-icon >arrow_right_alt</mat-icon>The lot period will be calculated by the bank based on the number of members and duration of the community.</div>
             <div class="rule1"><mat-icon>arrow_right_alt</mat-icon>The number of loans and loan amount allowed for each community will be calculated by the bank based on the contribution and duration of the community.  </div>
+            <img class="meetingimage"src="assets\Meeting.png">
         </div>
     </div>
     <div fxFlex="50" class="maindiv">
-        <div>Lets begin with your own community</div>
-        <div class="mainrectangle">
-        </div>
+        <form>
+            <div>Lets begin with your own community</div>
+            <div class="mainrectangle">
+                <div fxLayout="row" style="padding-left: 10px;padding-top: 10px;">
+                    <div fxLayout="col" fxFlex="30">
+                        <label>Name: </label>
+                    </div>
+                    <div fxLayout="col" fxFlex="40" style="width: 300px;">
+                        <input type="text" placeholder="Name of the Community">
+                    </div>
+                    <div fxLayout="col" fxFlex="20" style="padding-left: 100px;width: 50px;">
+                        <mat-icon class="uploadicon">upload</mat-icon>
+                    </div>
+                </div>
+                <div fxLayout="row" style="padding-left: 10px;padding-top: 10px;">
+                    <div fxLayout="col" fxFlex="30">
+                        <label>Description: </label>
+                    </div>
+                    <div fxLayout="col">
+                        <textarea row="8" col="100" placeholder=" Brief description about the community"></textarea>
+                    </div>
+                </div>  
+                <div fxLayout="row">
+                    <div fxLayout="col" fxFlex="25" >
+                        <label>Registering as:</label>
+                    </div>
+                    <div fxLayout="col" fxFlex="20">
+                        <div fxLayout="row">
+                            <label>NGO</label>
+                        </div>
+                        <br>
+                        <div fxLayout="row">
+                            <label>MR</label>
+                        </div>
+                    </div>
+                    <div fxLayout="col" fxFlex="25">
+                        <label>Account Types</label>
+                    </div>
+                    <div fxLayout="col" fxFlex="10">
+                        <div fxLayout="row">
+                            <label>Savings</label>
+                        </div>
+                        <br>
+                        <div fxLayout="row">
+                            <label>Business</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mainrectangle2">
+                <div fxLayout="row" style="padding-left: 10px;padding-top: 10px;">
+                    <div fxLayout="col" fxFlex="50">
+                        <label>Number of members: </label>
+                    </div>
+                </div>
+                <div fxLayout="row" style="padding-left: 10px;padding-top: 10px;">
+                    <div fxLayout="col" fxFlex="50">
+                        <label>Duration in months: </label>
+                    </div>
+                </div>
+                <div fxLayout="row" style="padding-left: 10px;padding-top: 10px;">
+                    <div fxLayout="col" fxFlex="50">
+                        <label>Monthly Contribution: </label>
+                    </div>
+                </div>
+                <div fxLayout="row" style="padding-left: 10px;padding-top: 10px;">
+                    <div fxLayout="col" fxFlex="30">
+                        <label>Start date: </label>
+                    </div>
+                    <div fxLayout="col" style="width: 150px;height: 100px;">
+                        <mat-calendar></mat-calendar>
+                        <!-- <mat-card class="demo-inline-calendar-card">
+                            <mat-calendar></mat-calendar>
+                        </mat-card> -->
+                    </div>
+                </div>
+                
+    
+            </div>
+        </form>
+       
         
     </div> 
     <div fxFlex="25" fxLayout="col" class="rightdiv">
+        <label style="padding-left: 20px;">Projected data</label>
+        <div fxLayout="row" style="padding-top: 20px;padding-left: 20px;">
+            <div fxLayout="col">
+                <div fxLayout="row">
+                    <div fxLayout="col" style="width: 50px;height: 50px;background-color: blueviolet;">
+                      
+                    </div>
+                    <div fxLayout="col" style="width: 50px;height: 50px;background-color: blueviolet;padding-left: 10px;" >
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div fxLayout="row">
+            <img src="assets/Leaf.png">
+        </div>
+        <div fxLayout="row">
+            <div fxLayout="col">
+               + Submit
+            </div>
+            <div fxLayout="col">
+                cancel
+            </div>
+        </div>
+       
+        
 
     </div>
 </div>

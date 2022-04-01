@@ -50,7 +50,7 @@ incomeData = [
 
   public gotoaddcommunity()
   {
-    const dialogRef = this.dialog.open(AddcommunityComponent,{width:'1400px',panelClass: 'custom-dialog-container'
+    const dialogRef = this.dialog.open(AddcommunityComponent,{height:'800px',width:'1400px',panelClass: 'custom-dialog-container'
 
   });
     
