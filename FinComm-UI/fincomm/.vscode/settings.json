@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/b60f6111-2fbe-4e57-8dd2-593d0a782448/resourceGroups/fincomm/providers/Microsoft.Web/sites/fincomm",
+    "appService.deploySubpath": "dist\\fincomm"
+}

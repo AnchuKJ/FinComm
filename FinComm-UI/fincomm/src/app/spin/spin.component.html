@@ -1,0 +1,23 @@
+<ngx-wheel *ngIf="!hideWheel"
+  [width]='600'
+  [height]='600'
+  [spinDuration]='6'
+  [disableSpinOnClick]='true'
+  [items]='items'
+  [innerRadius]='50'
+  [spinAmount]='10'
+  [textOrientation]='textOrientation'
+  [textAlignment]='textAlignment'
+  pointerStrokeColor='white'
+  pointerFillColor='#6021ad'
+  [idToLandOn]='idToLandOn'
+  (onSpinStart)='before()'
+  (onSpinComplete)='after()'
+>
+</ngx-wheel>
+<div *ngIf="hideWheel" (click)="close()" class="closediv"><mat-icon>close</mat-icon></div>
+<div *ngIf="hideWheel" class="resultdiv">
+    <div class="resulttitle">The Winner is:</div>
+    <div class="avatar"><img [src]="members[idToLandOn].avatar"></div>
+    <div class="resultvalue">{{members[idToLandOn].name}}</div>
+</div>

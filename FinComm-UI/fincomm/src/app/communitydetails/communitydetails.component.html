@@ -1,10 +1,10 @@
 <div fxLayout="row" class="communitydetailsdiv">
-    <div fxFlex="68" class="leftdiv">
+    <div fxFlex="72" class="leftdiv">
         <div fxLayout="column" class="communitydiv">
             <div fxLayout="row" class="communityheaderrow">
-                <div fxFlex="12" class="communitylogo"><img src="assets\communitylogo.png"></div>
-                <div fxFlex="78" class="communityname">Welfare Group</div>
-                <div fxFlex="10"><img class="spinimg" src="assets\spin.png"></div>
+                <div fxFlex="12" class="communitylogo"><img [src]="communityData.avatar"></div>
+                <div fxFlex="78" class="communityname">{{communityData.name}}</div>
+                <div fxFlex="10"><img class="spinimg" (click)="onSpin()" src="assets\spin.png"></div>
             </div>
             <div class="communitydescription">
                 Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. 
@@ -34,11 +34,7 @@
                             <div class="boxtitle">Monthly Savings</div>
                         </div>
                         <div fxFlex="50" class="box2 box" routerLink="/loandetails">
-                            <div class="circlediv"><mat-icon>account_balance</mat-icon></div>
-                           <!--<div class="actiondiv"><mat-icon [matMenuTriggerFor]="menu" >more_vert</mat-icon></div>
-                            <mat-menu #menu="matMenu">
-                                <button mat-menu-item routerLink="/loandetails"><mat-icon>desktop_windows</mat-icon>View</button>
-                              </mat-menu>-->
+                            <div class="circlediv"><mat-icon>account_balance</mat-icon></div>                       
                             <div class="boxvalue">{{communitydetails.loanrequests}}</div>
                             <div class="boxtitle">Loan Requests</div>
                         </div>
@@ -74,9 +70,9 @@
             </div>
         </div>
     </div>
-    <div fxFlex="32" class="rightdiv">
+    <div fxFlex="28" class="rightdiv">
         <div class="righttitle">Community total</div>
-        <div class="rightchart" fxLayout="row">
+        <div class="rightchart" fxLayout="column">
             <div fxFlex="60" class="chartdiv">
                 <ngx-charts-pie-chart 
                     [results]="communitytotal"
@@ -90,18 +86,18 @@
                     [gradient]="true">
                 </ngx-charts-pie-chart>
             </div>
-            <div fxFlex="40" class="charttotalvalue">
-                <div fxLayout="row" class="chartdetail">
+            <div fxFlex="40" fxLayout="row" class="charttotalvalue">
+                <div fxLayout="row" fxFlex="50" class="chartdetail">
                     <mat-icon>account_balance</mat-icon>
                     <div fxFlex="80">
-                        <div class="charttotalvalue">$12000</div>
+                        <div class="charttotalvalue">${{communityData.savings}}</div>
                         <div class="charttitle">Savings</div>
                     </div>
                 </div>
                 <div fxLayout="row" class="chartdetail">
                     <mat-icon>real_estate_agent</mat-icon>
                     <div fxFlex="80">
-                        <div class="charttotalvalue">$5000</div>
+                        <div class="charttotalvalue">${{communityData.loan}}</div>
                         <div class="charttitle">Loan</div>
                     </div>
                 </div>
@@ -120,7 +116,7 @@
                 <img [src] = "activity.avatar">
                 <div class="activitydiv">
                     <div class="activityowner">{{activity.name}}</div>
-                    <div class="activityname">{{activity.activity}}</div>
+                    <div class="activityname">{{activity.activityDesc}}</div>
                 </div>
             </div>
         </div>

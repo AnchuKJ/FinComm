@@ -2,6 +2,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { AddcommunityComponent } from '../addcommunity/addcommunity.component';
+import { community, FincommService } from '../fincomm.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -12,10 +13,13 @@ import { AddcommunityComponent } from '../addcommunity/addcommunity.component';
 export class DashboardComponent implements OnInit {
 
   invitations=[
-      {avatar:'assets/invitation.png',scheme:'Cancer Relief'}
+      {avatar:'assets/invitation.png',name:'Cancer Relief', startson:'12 APR', leader:'Ann Maria', amount:100},
+      {avatar:'assets/invitation2.png',name:'Eco Friendly Community', startson:'12 APR', leader:'Helen Jose', amount:100}
   ];
-  ActiveCommunity=[
-    {group:'Welfare Group',status:'ACTIVE',savings:'$120',loanTotal:'$120',loanRequest:'3'}
+  activeCommunity=[
+    {"name":"Welfare Group","status":"Active","savings":200,"loan":100,"loanrequests":3,"startdate":"01/02/2022","membercount":2,"avatar":"assets\\community1.png"},
+    {"name":"Welfare Group","status":"Open","savings":200,"loan":100,"loanrequests":3,"startdate":"01/02/2022","membercount":2,"avatar":"assets\\community2.png"},
+    {"name":"Welfare Group","status":"Open","savings":200,"loan":100,"loanrequests":3,"startdate":"01/02/2022","membercount":2,"avatar":"assets\\community2.png"}
   ];
  Communityleader=[
    {leader:'Helen Jose'}
@@ -25,42 +29,64 @@ export class DashboardComponent implements OnInit {
   {name:"Savings", value:15000}
 ];
 communitychartcolor=[
-  { name: "Loan", value: '#8E30FF' },
-  { name: "Savings", value: '#CF7CE1' },
+  { name: "Loan", value: '#81A1DF' },
+  { name: "Savings", value: '#9081DF' },
 ];
 
 legendTitle="Savings Rate";
 incomechartcolor=[
-  {name:"Oct 2021",value:'#8E30FF'},
-  {name:"Nov 2021",value:'#8E30FF'},
-  {name:"Dec 2021",value:'#8E30FF'},
-  {name:"Jan 2021",value:'#8E30FF'},
-  {name:"Feb 2021",value:'#8E30FF'}
+  {name:"Oct 2021",value:'#81A1DF'},
+  {name:"Nov 2021",value:'#818ADF'},
+  {name:"Dec 2021",value:'#9081DF'},
+  {name:"Jan 2022",value:'#A781DF'},
+  {name:"Feb 2022",value:'#8777E0'}
 ];
 incomeData = [
   { name: "Oct 2021", value: 105000 },
   { name: "Nov 2021", value: 55000 },
   { name: "Dec 2021", value: 15000 },
-  { name: "Jan 2021", value: 150000 },
-  { name: "Feb 2021", value: 20000 }
+  { name: "Jan 2022", value: 150000 },
+  { name: "Feb 2022", value: 20000 }
 ];
-  constructor(public dialog:MatDialog) {
-  
-   }
+
+  communityList:community;
+
+  constructor
+  (
+    public dialog:MatDialog, 
+    private fincommService:FincommService,
+    private router:Router
+  ) 
+  { }
 
   public gotoaddcommunity()
   {
-    const dialogRef = this.dialog.open(AddcommunityComponent,{width:'1400px',panelClass: 'custom-dialog-container'
-
-  });
+      const dialogRef = this.dialog.open( AddcommunityComponent,
+      {
+        width:'1400px',
+        panelClass: 'custom-dialog-container' 
+      });
     
-    dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
-        
-    });
+      dialogRef.afterClosed().subscribe(result => {
+        console.log(`Dialog result: ${result}`);        
+      });
 
   }
   
   ngOnInit(): void {
+    this.getCommunities();
+  }
+
+  public getCommunities(){
+    this.fincommService.getCommunities().subscribe(res=>{
+      this.communityList = res;
+      console.log(this.communityList);
+    });
+  }
+
+  public launchCommunity(item:community){
+    if(item.status == 'Active'){
+      this.router.navigateByUrl('community', {state: item});
+    }
   }
 }

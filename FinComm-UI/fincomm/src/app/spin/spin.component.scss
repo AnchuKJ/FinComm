@@ -1,0 +1,36 @@
+.resultdiv{
+    text-align: center;
+    margin: auto;
+    vertical-align: middle;
+    margin-top: 55px;
+    border: dashed;
+    padding: 20px;
+    color: white;
+    background-color: #6021ad;
+    .resulttitle{
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.04em;
+        margin-bottom: 10px;
+    }
+    img{
+        width: 100px;
+    }
+    .resultvalue
+    {
+        font-weight: 600;
+        font-size: 25px;
+        letter-spacing: 0.04em;
+    }
+}
+
+.closediv{
+    text-align: end;
+    mat-icon{
+        margin: 15px 20px 0px 0px;
+        border: 1px solid #6021ad;
+        border-radius: 6px;
+        color:#6021ad;
+        cursor: pointer;
+    }
+}

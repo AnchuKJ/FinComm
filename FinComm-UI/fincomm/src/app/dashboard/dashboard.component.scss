@@ -1,672 +1,278 @@
 app-dashboard{
-  .welcomediv {
-    //position: absolute;
-    width: 160px;
-    height: 31px;
-    left: 285px;
-    top: 118px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600 bold;
-    font-size: 22px;
-    margin-left: 50px;
-    line-height: 143%;
-    letter-spacing: -0.03em;
-    color: #8777e0;
-  }
+  .maindiv{
+    .leftdiv{
+      margin: 35px 50px;
+      .welcomediv {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 143%;
+        letter-spacing: 0.02em;
+        color: #8777e0;
+      }
+      .communitydiv {
+        text-align: center;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 143%;
+        color: #FFFFFF;
+        background: #8777E0;
+        border-radius: 21px;
+        letter-spacing: 0.04em;
+        padding: 7px 15px 0px 15px;
+        text-transform: uppercase;
+        min-width: 150px;
+      }
+      .searchdiv{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #8f8f8f;
 
-  .communitydiv {
-    width: 136px;
-    height: 30px;
-    text-align: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 143%;
-    color: #FFFFFF;
-    background: #8777E0;
-    border-radius: 21px;
-    padding-top: 8px;
-    margin: 0px auto;
-    letter-spacing: 0.04em;
-  }
+        mat-form-field{
+          width: 70%;
+        }
+      }
+      .activecommunitytitlerow{
+        margin-top: 5px;
+        .activetitle{
+          font-weight: 550;
+          font-size: 15px;
+          line-height: 143%;
+          letter-spacing: 0.04em;
+          color: #000000;    
+        }
+        .navigatediv{
+          min-width: 80px;
+          .first{
+            color: #8f8f8f;
+          }
+          .second{
+            color: #8777e0;
+          }
+        }
+      }
+      .activecommunityrow{
+        padding: 10px 0px 25px 10px;
+        .activecommunity{
+          text-align: center;     
+          cursor: pointer;     
+          box-shadow: 0px 14px 40px rgba(42, 80, 118, 0.25);
+          border-radius: 21px;
+          padding: 20px;
+          min-width: 210px;
+          margin-right: 80px;
+          img{
+            width: 90px;
+          }
 
-  element.style {
-    margin-top: 10px;
-  }
-
-  .activediv {
-    position: absolute;
-    width: 158px;
-    height: 23px;
-    left: 310px;
-    top: 220px;
-
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 143%;
-    margin-left: 80px;
-
-
-    /* identical to box height, or 23px */
-
-    letter-spacing: -0.03em;
-
-    color: #000000;
-    
-  }
-  .navigate{
-    margin-left: 600px;
-    margin-top: 100px;
-
-  }
-
-
-  .linediv {
-    position: absolute;
-
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
-    /* identical to box height */
-
-    display: flex;
-    align-items: center;
-    margin-top: -20px;
-
-    color: #8f8f8f;
-    mat-form-field{
-      width: 700px;
+          .namediv{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 143%;
+            margin: 5px auto;
+          }
+          .statuslabel{
+            border-radius: 6px;
+            width: fit-content;
+            margin: 5px auto 15px auto;
+            padding: 2px 20px;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 12px;
+            letter-spacing: 0.035em;
+          }
+          .datalabel{
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 30px;
+            letter-spacing: 0.03em;
+          }
+          .buttondiv{
+            background: #8777E0;
+            border-radius: 21px;
+            color: #ffffff;
+            max-width: 170px;
+            padding: 6px 0px;
+            margin: 10px auto 0px auto;
+          }
+        }
+        > div:nth-of-type(odd) {
+          background: linear-gradient(180deg, rgba(169, 133, 223, 0.71) 0%, #A985DF 99.98%);
+          color: #ffffff;
+          .statuslabel{
+            color: #A781DF;
+            background-color: #ffffff;
+          }
+        }
+        > div:nth-of-type(even) {
+          background: #FFFFFF;
+          color: #8F8F8F;
+          .namediv{
+            color: #000000;
+          }
+          .statuslabel{
+            color: #ffffff;
+            background-color: #A781DF;
+          }
+        }
+      }
+      .invitationtitle{       
+        font-weight: 550;
+        font-size: 15px;
+        line-height: 143%;
+        letter-spacing: 0.04em;
+        color: #000000;  
+        margin: 20px 0px;
+      }
+      .invitationsrow{
+        .invitationrow{
+          background: #FFFFFF;
+          box-shadow: 0px 14px 40px rgba(109, 141, 173, 0.25);
+          border-radius: 21px;
+          margin-bottom: 30px;
+          .imagediv{
+            margin: 20px 20px 13px 20px;  
+          }
+          .detailscol{
+            margin: 10px 0px 0px 50px;
+            .namediv{
+              font-weight: 550;
+              font-size: 15px;
+              letter-spacing: 0.04em;
+              color: #000000;  
+              margin: 10px 0px;
+            }
+            .startdate{
+              background: #A781DF;
+              border-radius: 6px;
+              color: #ffffff;
+              width: fit-content;
+              padding: 5px 20px 3px 20px;
+              text-transform: uppercase;
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 143%;
+              letter-spacing: 0.035em;              
+            }
+            .communityleader{
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 143%;
+              color: #8F8F8F;
+              margin-top: 10px;
+            }           
+          }
+          .amountdiv{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 143%;
+            color: #4CAF50;
+            margin-top: 20px;
+            text-align: right;
+            margin-right: 10px;
+          }
+          .permonth{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 143%;
+            color: #8F8F8F;
+            text-align: right;
+            margin-right: 10px;
+          }
+          .buttondiv{
+            border-left: 1px solid #ECECEC;
+            margin: auto;
+            text-align: center;
+            div{
+              border-radius: 21px;
+              width: 60%;
+              padding: 5px 10px;
+              color: #ffffff;
+              margin: 0px auto 10px auto;
+              font-weight: 500;
+              font-size: 14px;
+              letter-spacing: 0.06em;
+            }
+            .acceptbutton{
+              background: #8777E0;             
+            }
+            .rejectbutton{
+              background: #8F8F8F;
+            }
+            mat-icon{
+              vertical-align: middle;
+              margin-right: 10px;
+            }
+          }        
+        }
+      }
     }
-  }
-  .rectanglediv{
-  text-align: center;
-    width: 256px;
-    height: 322px;  
-    background: linear-gradient(180deg, rgba(169, 133, 223, 0.71) 0%, #A985DF 99.98%);
-    box-shadow: 0px 14px 40px rgba(42, 80, 118, 0.25);
-    border-radius: 21px;
-    margin-top: 10px;
-    margin-left: 40px;
-
-  }
-  image1{
-    width: 90px;
-    height: 100px;
-    left: 488px;
-    top: 317px;
-  }
-  p{
-  width: 112px;
-  height: 23px;
-  left: 477px;
-  top: 418px;
-  margin-left: 75px;
-
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 143%;
-  /* identical to box height, or 23px */
-
-  text-align: center;
-  letter-spacing: -0.03em;
-
-  color: #FFFFFF;
-
-  }
-  .activestatus{
-    width: 120px;
-    height: 30px;
-    text-align: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 143%;
-    color: #8777e0;
-    background: #ffffff;
-    border-radius: 21px;
-    padding-top: 8px;
-    margin: 0px auto;
-    letter-spacing: 0.04em;
-  }
-  .savings{
-  width: 104px;
-  margin-top: -10px;
-  height: 41px;
-  left: 481px;
-  top: 480px;
-  margin-left: 80px;
-
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 41px;
-  /* identical to box height, or 293% */
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-
-  color: #FFFFFF;
-
-  }
-  .loantotal{
-  width: 124px;
-  height: 41px;
-  left: 475px;
-  top: 508px;
-  margin-left: 70px;
-
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 41px;
-  /* identical to box height, or 293% */
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-
-  color: #FFFFFF;
-  }
-  .loan{
-    width: 120px;
-    height: 30px;
-    text-align: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 143%;
-    color: #8777e0;
-    background: #FFFFFF;
-    border-radius: 21px;
-    padding-top: 8px;
-    margin: 0px auto;
-    letter-spacing: 0.04em;
-  }
-  .carediv{
-    width: 124px;
-    height: 23px;
-    left: 760px;
-    top: 418px;
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 143%;
-    /* identical to box height, or 23px */
-
-    text-align: center;
-    letter-spacing: -0.03em;
-
-    color: #000000;
-  }
-  .open{
-    width: 120px;
-    height: 30px;
-    text-align: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 143%;
-    color: #FFFFFF;
-    background: #8777E0;
-    border-radius: 21px;
-    padding-top: 8px;
-    margin: 0px auto;
-    letter-spacing: 0.04em;
-
-  }
-  .startdiv{
-    width: 155px;
-    height: 20px;
-    left: 739px;
-    top: 485px;
-    margin-left: 55px;
-    margin-top: 20px;
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 143%;
-    /* identical to box height, or 20px */
-
-
-    color: #8F8F8F;
-  }
-  .membersdiv{
-    width: 136px;
-  height: 20px;
-  left: 748px;
-  top: 514px;
-  margin-left: 75px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 143%;
-  /* identical to box height, or 20px */
-
-
-  color: #8F8F8F;
-  }
-  .invitationdiv{
-    width: 136px;
-    height: 30px;
-    text-align: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 143%;
-    color: #FFFFFF;
-    background: #8777E0;
-    border-radius: 21px;
-    padding-top: 8px;
-    margin-top: 20px;
-    margin-left: 60px;
-    letter-spacing: 0.04em;
-
-  }
-  .secondrectanglediv{
-    text-align: center;
-    position: absolute;
-    margin-top: 100px;
-    width: 256px;
-    height: 322px;
-    left: 694px;
-    top: 292px;
-
-    background: #FFFFFF;
-    box-shadow: 0px 14px 40px rgba(109, 141, 173, 0.25);
-    border-radius: 21px;
-    margin-top: -35px;
-    margin-left: 20px;
-
-  }
-  .Invitations{
-  width: 82px;
-  height: 23px;
-  left: 405px;
-  top: 649px;
-  margin-left: 80px;
-  margin-top: 20px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 143%;
-  /* identical to box height, or 23px */
-
-  letter-spacing: -0.03em;
-
-  color: #000000;
-
-  }
-  .invitationrectangle{
-  width: 545px;
-  height: 140px;
-  left: 405px;
-  top: 687px;
-  margin-left: 45px;
-  margin-top: 20px;
-  background: #FFFFFF;
-  box-shadow: 0px 14px 40px rgba(109, 141, 173, 0.25);
-  border-radius: 21px;
-  }
-  .cancerrelief{
-  width: 103px;
-  height: 23px;
-  left: 551px;
-  top: 712px;
-  margin-left: 50px;
-  margin-top: 20px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 143%;
-  /* identical to box height, or 23px */
-
-  letter-spacing: -0.03em;
-
-  color: #000000;
-  }
-  .startdate{
-                          width: 136px;
-                          padding-top: 10px;
-                          margin-left: -20px;
-                          margin-top: 10px;
-                          height: 30px;
-                          text-align: center;
-                          font-weight: 500;
-                          font-size: 14px;
-                          line-height: 143%;
-                          color: #FFFFFF;
-                          background: #8777E0;
-                          border-radius: 21px;
-                          letter-spacing: 0.04em;
-  }
-  .startdate2{
-    width: 136px;
-    margin-top: 20px;
-    height: 35px;
-    text-align: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 143%;
-    color: #FFFFFF;
-    background: #8777e0;
-    border-radius: 21px;
-    letter-spacing: 0.05em;
-  }
-  .communityleader{
-    margin-top: 20px;
-    width: 216px;
-  height: 20px;
-  left: 554px;
-  top: 784px;
-
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 143%;
-  /* identical to box height, or 20px */
-
-
-  color: #8F8F8F;
-  }
-  .communityleader2{
-    margin-top: 10px;
-    width: 216px;
-  height: 20px;
-  left: 554px;
-  top: 784px;
-
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 143%;
-  /* identical to box height, or 20px */
-
-
-  color: #8F8F8F;
-  }
-  .acceptrectangle{
-    text-align: center;
-    margin-left:350px;
-    margin-top: -38px;
-  width: 124px;
-  height: 32.2px;
-  left: 817px;
-  top: 721px;
-  font-size: medium;
-  background: #8777E0;
-  border-radius: 21px;
-  }
-  .thumbsup{
-    margin-left: 350px;
-  left: 4.17%;
-  right: 4.17%;
-  top: 4.17%;
-  bottom: 12.5%;
-
-  background: #FFFFFF;
-  }
-  .ups{
-    color: #8B2CF5;
-  }
-  .imageinvitation{
-    margin-left: 40px;
-    margin-top: 20px;
-    width: 90px;
-    height: 90px;
-    left: 430px;
-    top: 712px;
-    
-  }
-  .acceptbutton{
-                      
-    width: 136px;
-    padding-top: 10px;
-    margin-left: 225px;
-    margin-top: -70px;
-    height: 30px;
-    text-align: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 143%;
-    color: #FFFFFF;
-    background: #8777E0;
-    border-radius: 21px;
-    letter-spacing: 0.04em;
-
-  }
-  .acceptbutton2{
-    width: 136px;
-    padding-top: 10px;
-    margin-left: 250px;
-    margin-top: -110px;
-    height: 30px;
-    text-align: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 143%;
-    color: #FFFFFF;
-    background: #8777E0;
-    border-radius: 21px;
-    letter-spacing: 0.04em;
-  }
-  .rejectbutton{
-    
-    width: 136px;
-    padding-top: 10px;
-    margin-left: 230px;
-    margin-top: 30px;
-    height: 30px;
-    text-align: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 143%;
-    color: #FFFFFF;
-    background: #4b4b4d;
-    border-radius: 21px;
-    padding-top: 8px;
-    
-    letter-spacing: 0.04em;
-  }
-  .rejectbutton2{
-    width: 136px;
-    padding-top: 10px;
-    margin-left: 250px;
-    margin-top: 25px;
-    height: 30px;
-    text-align: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 143%;
-    color: #FFFFFF;
-    background: #4b4b4d;
-    border-radius: 21px;
-    padding-top: 8px;
-    
-    letter-spacing: 0.04em;
-  }
-  .calendardiv {
-    position: absolute;
-    width: 270px;
-    height: 140px;
-    left: 1022px;
-    top: 148px;
-
-    background: #ffffff;
-    border-radius: 21px;
-  }
-  .titlecalendar{
-    margin-left: 30px;
-    margin-top: 20px;
-    width: 108px;
-    height: 23px;
-    left: 1033px;
-    top: 111px;
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 143%;
-    /* identical to box height, or 23px */
-
-    letter-spacing: 0.02em;
-
-  color: #000000;
-  }
-  .invitationrectangle2{
-    width:545px;
-  height: 140px;
-  left: 405px;
-  top: 687px;
-  margin-left: 45px;
-  margin-top: 20px;
-  background: #FFFFFF;
-  box-shadow: 0px 14px 40px rgba(23, 90, 156, 0.25);
-  border-radius: 21px
-  }
-  .imageinvitation2{
-    margin-left: 35px;
-    margin-top: 20px;
-    width: 90px;
-    height: 90px;
-    left: 430px;
-    top: 883px;
-    
-  }
-  .ecocommunity{
-    width: 175px;
-    margin-left: 20px;
-    margin-top: 25px;
-  height: 23px;
-  left: 551px;
-  top: 883px;
-
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 143%;
-  /* identical to box height, or 23px */
-
-  letter-spacing: -0.03em;
-
-  color: #000000;
-  }
-  .Analytics{
-    margin-left: 700px;
-    margin-top: -400px;
-    width: 79px;
-    height: 23px;
-    left: 1024px;
-    top: 506px;
-
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 143%;
-  /* identical to box height, or 23px */
-
-  letter-spacing: 0.02em;
-
-  color: #000000;
-  }
-  .piechart{
-    margin-top: -20px;
-  }
-  .savingsrate{
-    margin-left: 50px;
-    
-    position: absolute;
-    width: 148px;
-    height: 23px;
-    left: 1229px;
-    top: 581px;
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 143%;
-    /* identical to box height, or 23px */
-
-    letter-spacing: 0.02em;
-
-    color: #000000;
-
-  }
-  .loanrate{
-    margin-left: 50px;
-  position: absolute;
-  width: 86px;
-  height: 23px;
-  left: 1229px;
-  top: 617px;
-
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 143%;
-  /* identical to box height, or 23px */
-
-  letter-spacing: 0.02em;
-
-  color: #000000;
-  }
-  .MonthlyRevenue{
-    margin-left: 700px;
-    margin-top: 250px;
-    width: 145px;
-  height: 23px;
-  left: 1024px;
-  top: 722px;
-
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 143%;
-  /* identical to box height, or 23px */
-
-  letter-spacing: 0.02em;
-
-  color: #000000;
-  }
-  .barchart{
-  background: linear-gradient(180deg, #8777E0 0%, #81A1DF 100%);
-  background: linear-gradient(180deg, rgba(167, 129, 223, 0.8) 0%, #A781DF 100%);
-  }
-  .addcommunity{
-    width: 136px;
-    padding-top: 10px;
-    margin-left: 35px;
-    margin-top: 260px;
-    height: 30px;
-    text-align: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 143%;
-    color: #FFFFFF;
-    background: #8777E0;
-    border-radius: 21px;
-    letter-spacing: 0.04em;
+    .rightdiv{
+      background: #F3EFFB;
+      padding: 30px;
+      min-width: 450px;
+      .calendardiv{
+        .titlecalendar{
+          font-weight: 550;
+          font-size: 15px;
+          line-height: 143%;
+          letter-spacing: 0.04em;
+          margin-bottom: 15px;
+        }
+        .calendarcol{
+          background-color: #ffffff;
+          border-radius: 20px;
+          color: #8777E0;
+        }
+      }
+      .analyticsdiv{
+        .analyticstitle{
+          font-weight: 550;
+          font-size: 15px;
+          line-height: 143%;
+          letter-spacing: 0.04em;
+          margin: 15px 0px 0px 0px;
+        }
+        .chartdiv{
+          .chartdata{
+            margin: auto;
+            .ratevalue{
+              font-weight: 300;
+              font-size: 15px;
+              line-height: 143%;             
+              letter-spacing: 0.02em;
+              color: #8f8f8f;
+              margin-bottom: 5px;
+              span{
+                font-weight: 600;
+                color:#8777E0;
+              }
+            }
+          }
+        }       
+      }
+      .monthlyRevenue{
+        .revenuetitle{
+          font-weight: 550;
+          font-size: 15px;
+          line-height: 143%;
+          letter-spacing: 0.04em;
+        }
+      }
+      .addcommunity{
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #8777E0;
+        border-radius: 27px;
+        width: 70%;
+        margin: 25px auto 5px auto;
+        padding: 10px 0px;
+      }
+    }
   }
 }
 .custom-dialog-container {
@@ -678,4 +284,3 @@ app-dashboard{
     overflow: hidden !important;
   }
 }
-

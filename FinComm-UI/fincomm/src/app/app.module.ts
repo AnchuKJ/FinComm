@@ -18,7 +18,11 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { LoandetailsComponent } from './loandetails/loandetails.component';
 import { AddcommunityComponent } from './addcommunity/addcommunity.component';
 import {MatDialogModule} from '@angular/material/dialog';
-
+import { HttpClientModule } from '@angular/common/http';
+import { FincommService } from './fincomm.service';
+import { SpinComponent } from './spin/spin.component';
+import { NgxWheelModule } from 'ngx-wheel';
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     DashboardComponent,
     CommunitydetailsComponent,
     LoandetailsComponent,
-    AddcommunityComponent
+    AddcommunityComponent,
+    SpinComponent
   ],
   imports: [
     BrowserModule,
@@ -41,9 +46,11 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatInputModule,
     MatMenuModule,
     NgxChartsModule,
-    MatDialogModule
+    MatDialogModule,
+    HttpClientModule,
+    NgxWheelModule  
   ],
-  providers: [MatDatepickerModule],
+  providers: [MatDatepickerModule, FincommService, DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

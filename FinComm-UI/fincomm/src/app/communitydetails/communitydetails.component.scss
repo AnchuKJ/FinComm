@@ -11,7 +11,7 @@
             padding: 30px 30px 20px 30px;
             .communityheaderrow{
                 .communitylogo{
-                    min-width: 150px;
+                    min-width: 130px;
                 }
                 .communityname{
                     vertical-align: middle;
@@ -89,11 +89,11 @@
                         }
                     }
                     .box1{                       
-                        background-color: #ABA0E9;
+                        background-color: #796cc3;
                         border-radius: 20px 0px;  
                         margin: 0px 30px 35px 0px; 
                         .circlediv{
-                            background-color: #ABA0E9;                            
+                            background-color: #796cc3;                            
                         }                     
                     }
                     .box2{
@@ -125,11 +125,11 @@
                         }   
                     }
                     .box4{
-                        background: #9AB4E5;
+                        background: #557cc5;
                         border-radius: 0px 20px;
                         margin: 0px 25px 0px 0px;
                         .circlediv{
-                            background-color: #9AB4E5;                            
+                            background-color: #557cc5;                            
                         }   
                     }
                 }
@@ -169,25 +169,28 @@
     .rightdiv{
         background-color: #F3EFFB;
         padding: 0px 30px 30px 30px;
+        min-width: 400px;
         .righttitle{
             font-weight: 600;
             font-size: 16px;
             line-height: 143%;
             letter-spacing: 0.04em;
-            margin: 30px 0px 20px 0px;
+            margin: 30px auto 20px auto;
         }
         .rightchart{
             .chartdiv{
-                margin-right:20px;
+                margin:auto;
             }
             .charttotalvalue{   
-                margin: auto 0px auto 20px;             
+                margin: 10px auto 0px auto;        
                 .chartdetail{
-                    margin-bottom: 20px;
+                    margin-bottom: 0px;                    
+                    margin-right: 30px;
                     mat-icon{
                         color: #8B2CF5;
                         font-size: 44px;
-                        margin-right: 10px;
+                        margin-right: 20px;
+                        margin-top: 7px;
                     }
                     .charttotalvalue{
                         font-weight: 600;
@@ -200,7 +203,6 @@
                         font-size: 12px;
                         line-height: 143%;
                         letter-spacing: 0.04em;
-                        margin-left: 20px;
                     }
                 }
             }
@@ -211,7 +213,7 @@
         .membersdiv{
             flex-wrap: wrap;
             .member{
-                min-width: 145px;
+                min-width: 120px;
                 margin-bottom: 15px;
                 div{
                     font-weight: 300;
@@ -224,6 +226,8 @@
             }
         }
         .activitymaindiv{
+            max-height: 300px;
+            overflow-y: auto;
             .activitylistdiv{
                 margin-bottom: 20px;
                 img{
@@ -251,4 +255,15 @@
             }
         }
     }
+}
+.spin-dialog-container{
+    .mat-dialog-container{
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        padding: 0px !important;
+        border-radius: 20px !important;
+        max-height: 100% !important;
+        min-height: 400px;
+        min-width: 600px;
+        overflow: hidden !important;
+      }
 }
