@@ -66,6 +66,9 @@ incomeData = [
         width:'1400px',
         panelClass: 'custom-dialog-container' 
       });
+   // const dialogRef = this.dialog.open(AddcommunityComponent,{height:'800px',width:'1400px',panelClass: 'custom-dialog-container'
+
+ // });
     
       dialogRef.afterClosed().subscribe(result => {
         console.log(`Dialog result: ${result}`);        
