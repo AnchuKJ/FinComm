@@ -23,6 +23,8 @@ import { FincommService } from './fincomm.service';
 import { SpinComponent } from './spin/spin.component';
 import { NgxWheelModule } from 'ngx-wheel';
 import { DatePipe } from '@angular/common';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,9 @@ import { DatePipe } from '@angular/common';
     NgxChartsModule,
     MatDialogModule,
     HttpClientModule,
-    NgxWheelModule  
+    NgxWheelModule,
+    MatCheckboxModule,
+    FormsModule
   ],
   providers: [MatDatepickerModule, FincommService, DatePipe],
   bootstrap: [AppComponent]

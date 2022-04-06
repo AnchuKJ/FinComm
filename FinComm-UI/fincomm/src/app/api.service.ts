@@ -8,9 +8,9 @@ import { Observable } from 'rxjs';
 export class ApiService {
 
   constructor(private httpClient: HttpClient) { }
-  //public baseUrl = "https://fincommapi.azurewebsites.net/";
-  public baseUrl = "http://localhost:5029/";
-
+  public baseUrl = "https://fincommapi.azurewebsites.net/";
+  //public baseUrl = "http://localhost:5029/";
+  public imagebaseurl ="https://fincommstore.blob.core.windows.net/"
   public get(url: string): Observable<any> {   
     let headers = new HttpHeaders();
     headers = headers.set("Accept", "application/json");
@@ -26,6 +26,12 @@ export class ApiService {
     const options = { headers: headers };
     return this.httpClient.post(this.baseUrl + url, payload, options).pipe(
     );
+  }
+
+  public uploadFile(url: string, formData: any):Observable<any>{
+    return this.httpClient.post(this.baseUrl + url, formData, {
+      reportProgress: true
+    });
   }
 
 }

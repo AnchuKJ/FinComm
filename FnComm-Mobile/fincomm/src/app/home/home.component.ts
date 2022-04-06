@@ -33,7 +33,7 @@ export class HomeComponent implements OnInit {
     this.pie1 = this.createPieChart(this.pie1, this.pieChart1, ['Savings', 'Total'], [2000, 10000], ["#6D5FFD", "#EEEFEF"], 'Savings %');
     this.pie2 =this.createPieChart(this.pie2, this.pieChart2,  ['Loans','Total'], [7000, 20000], ["#C916CC", "#EEEFEF"], 'Loans approved %');
     this.pie3 = this.createPieChart(this.pie3, this.pieChart3,  ['Lot','Total'], [3, 10], ["#E1604D", "#EEEFEF"], 'Lot Count');
-    this.createBarChart(this.barChart,  ['Jan','Feb', 'Mar', 'Apr', 'May', 'Jun'], [1000,6000, 3000, 7000, 5000, 2000], ["#E1604D", "#EEEFEF"], 'Payment Activity');
+    this.createBarChart(this.barChart,  ['Jan','Feb', 'Mar', 'Apr', 'May', 'Jun'], [1000,6000, 3000, 7000, 5000, 2000], ["#E1604D", "#EEEFEF"], '');
   }
 
   ionViewDidLeave(){
@@ -70,6 +70,7 @@ export class HomeComponent implements OnInit {
           },
           title: {
             display: true,
+            color:'white',
             text: title
           }
         }
@@ -86,7 +87,7 @@ export class HomeComponent implements OnInit {
         labels: labels,        
         datasets: [{
           data: value,
-          backgroundColor: 'rgba(109, 95, 253, .2)',         
+          backgroundColor: 'rgba(85, 107, 218, .2)',         
           borderWidth: 1,
           fill: true
         }]

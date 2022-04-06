@@ -6,7 +6,11 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoandetailsComponent } from './loandetails/loandetails.component';
 
 const routes: Routes = [
-  { path: '', component: DashboardComponent },
+  { 
+    path: '',
+    redirectTo:'dashboard',
+    pathMatch:'full'
+  },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'community', component: CommunitydetailsComponent },
   { path: 'loandetails', component: LoandetailsComponent },

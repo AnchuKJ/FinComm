@@ -21,6 +21,7 @@ app-dashboard{
         padding: 7px 15px 0px 15px;
         text-transform: uppercase;
         min-width: 150px;
+        cursor: pointer;
       }
       .searchdiv{
         font-weight: 300;
@@ -63,6 +64,7 @@ app-dashboard{
           margin-right: 80px;
           img{
             width: 90px;
+            border-radius: 50%;
           }
 
           .namediv{
@@ -194,10 +196,12 @@ app-dashboard{
               letter-spacing: 0.06em;
             }
             .acceptbutton{
-              background: #8777E0;             
+              background: #8777E0;  
+              cursor: pointer;           
             }
             .rejectbutton{
               background: #8F8F8F;
+              cursor: pointer;
             }
             mat-icon{
               vertical-align: middle;
@@ -271,6 +275,7 @@ app-dashboard{
         width: 70%;
         margin: 25px auto 5px auto;
         padding: 10px 0px;
+        cursor: pointer;
       }
     }
   }

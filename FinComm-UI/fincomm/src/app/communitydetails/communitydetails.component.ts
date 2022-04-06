@@ -45,12 +45,12 @@ export class CommunitydetailsComponent implements OnInit {
     };
 
     members=[
-      { name:"Kristin Watson", avatar:"assets/user1.png"},
-      { name:"Jasmine Favin", avatar:"assets/user2.png"},
-      { name:"Leslie Alexander", avatar:"assets/user3.png"},
-      { name:"Eleanor Pena", avatar:"assets/user4.png"},
-      { name:"Jenny Wilson", avatar:"assets/user5.png"},
-      { name:"Esther Howard", avatar:"assets/user6.png"}
+      { name:"Kristin Watson", avatar: this.fincommService.userImgeBaseUrl()+"user1.png"},
+      { name:"Jasmine Favin", avatar: this.fincommService.userImgeBaseUrl()+"user2.png"},
+      { name:"Leslie Alexander", avatar: this.fincommService.userImgeBaseUrl()+"user3.png"},
+      { name:"Eleanor Pena", avatar: this.fincommService.userImgeBaseUrl()+"user4.png"},
+      { name:"Jenny Wilson", avatar: this.fincommService.userImgeBaseUrl()+"user5.png"},
+      { name:"Esther Howard", avatar: this.fincommService.userImgeBaseUrl()+"user6.png"}
     ]
 
     constructor( 

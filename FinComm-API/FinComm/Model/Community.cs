@@ -7,7 +7,7 @@ namespace FinComm.Model
         [Key]
         public int id { get; set; }
         public string name { get; set; }
-        public int status { get; set; }
+        public string status { get; set; }
         public int savings { get; set; }
         public int loan { get; set; }
         public int loanrequests { get; set; }

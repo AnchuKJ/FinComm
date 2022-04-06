@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="activecommunityrow" fxLayout="row">
-            <div class="activecommunity" (click)="launchCommunity(item)" fxFlex="30" *ngFor="let item of activeCommunity">
+            <div class="activecommunity" (click)="launchCommunity(item)" fxFlex="30" *ngFor="let item of communityList">
                 <img class="image1" [src]="item.avatar">  
                 <div class="namediv">{{item.name}}</div>              
                 <div class="statuslabel">{{item.status}}</div>

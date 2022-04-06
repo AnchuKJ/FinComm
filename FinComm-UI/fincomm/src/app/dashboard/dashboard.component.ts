@@ -17,9 +17,9 @@ export class DashboardComponent implements OnInit {
       {avatar:'assets/invitation2.png',name:'Eco Friendly Community', startson:'12 APR', leader:'Helen Jose', amount:100}
   ];
   activeCommunity=[
-    {"name":"Welfare Group","status":"Active","savings":200,"loan":100,"loanrequests":3,"startdate":"01/02/2022","membercount":2,"avatar":"assets\\community1.png"},
-    {"name":"Welfare Group","status":"Open","savings":200,"loan":100,"loanrequests":3,"startdate":"01/02/2022","membercount":2,"avatar":"assets\\community2.png"},
-    {"name":"Welfare Group","status":"Open","savings":200,"loan":100,"loanrequests":3,"startdate":"01/02/2022","membercount":2,"avatar":"assets\\community2.png"}
+    {"name":"Welfare Group","description":"","status":"Active","savings":200,"loan":100,"loanrequests":3,"startdate":"01/02/2022","membercount":2,"avatar":"assets\\community1.png", "monthlysavings":100},
+    {"name":"Welfare Group","description":"","status":"Open","savings":200,"loan":100,"loanrequests":3,"startdate":"01/02/2022","membercount":2,"avatar":"assets\\community2.png", "monthlysavings":100},
+    {"name":"Welfare Group","description":"","status":"Open","savings":200,"loan":100,"loanrequests":3,"startdate":"01/02/2022","membercount":2,"avatar":"assets\\community2.png", "monthlysavings":100}
   ];
  Communityleader=[
    {leader:'Helen Jose'}
@@ -49,7 +49,7 @@ incomeData = [
   { name: "Feb 2022", value: 20000 }
 ];
 
-  communityList:community;
+  communityList:community[] =[];
 
   constructor
   (
@@ -71,7 +71,7 @@ incomeData = [
  // });
     
       dialogRef.afterClosed().subscribe(result => {
-        console.log(`Dialog result: ${result}`);        
+          this.getCommunities();       
       });
 
   }

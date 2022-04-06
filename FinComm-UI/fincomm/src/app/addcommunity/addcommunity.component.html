@@ -1,88 +1,149 @@
 <div fxLayout="row">
     <div fxFlex="25" fxLayout="col" class="leftdiv">
-        <div class="rules">
-            Rules
-            <div class="rule1"><mat-icon >arrow_right_alt</mat-icon>A community should have atleast 10 members.</div>
-            <div class="rule1"><mat-icon >arrow_right_alt</mat-icon>The minimum duration for the community is one year.</div>
-            <div class="rule1"><mat-icon >arrow_right_alt</mat-icon>If the number of joined members not meets the requirement until start date, Bank have the authority to cancel this community.</div>
-            <div class="rule1"><mat-icon >arrow_right_alt</mat-icon>The lot period will be calculated by the bank based on the number of members and duration of the community.</div>
-            <div class="rule1"><mat-icon>arrow_right_alt</mat-icon>The number of loans and loan amount allowed for each community will be calculated by the bank based on the contribution and duration of the community.  </div>
-            <img class="meetingimage"src="assets\Meeting.png">
+        <div class="rules" fxLayout = "column">
+            <div class="ruletitle">Rules</div>
+            <div class="rule1" *ngFor="let rule of rules" fxLayout="row">
+                <mat-icon >arrow_right</mat-icon>
+                <div>{{rule}}</div>
+            </div>
+            <div class="imagediv">
+                <img class="meetingimage" src="assets\Meeting.png">
+            </div>
         </div>
     </div>
     <div fxFlex="50" class="maindiv">
         <form>
-            <div>Lets begin with your own community</div>
-            <div class="mainrectangle">
-                <div fxLayout="row" style="padding-left: 10px;padding-top: 10px;">
-                    <div fxLayout="col" fxFlex="30">
-                        <label>Name: </label>
+            <div class="maintitle">Lets begin with your own community</div>
+            <div class="firstbox box">
+                <div fxLayout="row" class="firstrow">
+                    <div fxFlex="20" class="labelstyle">Name:</div>
+                    <div fxFlex="60" class="textstyle">                         
+                        <input type="text" 
+                        [(ngModel)] ="community.name"
+                        [ngModelOptions]="{standalone: true}" 
+                        placeholder="Name of the Community...">
                     </div>
-                    <div fxLayout="col" fxFlex="40" style="width: 300px;">
-                        <input type="text" placeholder="Name of the Community">
-                    </div>
-                    <div fxLayout="col" fxFlex="20" style="padding-left: 100px;width: 50px;">
-                        <mat-icon class="uploadicon">upload</mat-icon>
+                    <div fxFlex="20" class="uploadstyle" >
+                        <div>
+                            <img  [src]="uploadedImage">
+                        </div>
+                        <div class="editicondiv">
+                            <mat-icon class="uploadicon" (click) = "onPictureUpload()">upload</mat-icon>
+                            <input type="file" #fileupload id="fileupload" name="fileupload" accept="image/*" style="display:none;"/>
+                        </div>                       
                     </div>
                 </div>
-                <div fxLayout="row" style="padding-left: 10px;padding-top: 10px;">
-                    <div fxLayout="col" fxFlex="30">
-                        <label>Description: </label>
-                    </div>
-                    <div fxLayout="col">
-                        <textarea row="8" col="100" placeholder=" Brief description about the community"></textarea>
+                <div fxLayout="row">
+                    <div fxFlex="20" class="labelstyle">Description:</div>
+                    <div fxFlex="78" class="textstyle">
+                        <textarea 
+                        placeholder="Brief description about the community"></textarea>
                     </div>
                 </div>  
                 <div fxLayout="row">
-                    <div fxLayout="col" fxFlex="25" >
-                        <label>Registering as:</label>
-                    </div>
-                    <div fxLayout="col" fxFlex="20">
-                        <div fxLayout="row">
-                            <label>NGO</label>
+                    <div fxFlex="25" class="checkboxtitle">Registering as</div>
+                    <div fxLayout="column" fxFlex="30">
+                        <div>
+                            <mat-checkbox  
+                            [checked]="NGOSelected"                  
+                            [color]="task.color"
+                            (change)="setNGO($event.checked)">
+                            NGO
+                            </mat-checkbox>
                         </div>
-                        <br>
-                        <div fxLayout="row">
-                            <label>MR</label>
-                        </div>
-                    </div>
-                    <div fxLayout="col" fxFlex="25">
-                        <label>Account Types</label>
-                    </div>
-                    <div fxLayout="col" fxFlex="10">
-                        <div fxLayout="row">
-                            <label>Savings</label>
-                        </div>
-                        <br>
-                        <div fxLayout="row">
-                            <label>Business</label>
+                        <div>
+                            <mat-checkbox  
+                            [checked]="MFISelected"                  
+                            [color]="task.color"
+                            (change)="setMFI($event.checked)">
+                            MFI
+                            </mat-checkbox>
                         </div>
                     </div>
+                    <div fxFlex="25" class="checkboxtitle">Account Types</div>
+                    <div fxLayout="column" fxFlex="30">
+                        <div>
+                            <mat-checkbox  
+                            [checked]="savingsSelected"                  
+                            [color]="task.color"
+                            (change)="setSavings($event.checked)">
+                            Savings
+                            </mat-checkbox>
+                        </div>
+                        <div>
+                            <mat-checkbox  
+                            [checked]="businessSelected"                  
+                            [color]="task.color"
+                            (change)="setBusiness($event.checked)">
+                            Business
+                            </mat-checkbox>
+                        </div>
+                    </div>                   
                 </div>
             </div>
-            <div class="mainrectangle2">
-                <div fxLayout="row" style="padding-left: 10px;padding-top: 10px;">
-                    <div fxLayout="col" fxFlex="50">
-                        <label>Number of members: </label>
+            <div class="secondbox box">
+                <div fxLayout="row">
+                    <div fxFlex="32" class="labelstyle">Number of members</div>
+                    <div fxLayout="row" fxFlex="65">
+                        <span fxFlex="8" class="text-small">10</span>
+                        <mat-slider 
+                        color="primary"
+                        max="25"
+                        min="10"
+                        thumbLabel="true"
+                        tickInterval="5"
+                        [value]="community.membercount"
+                        [(ngModel)] ="community.membercount"
+                        [ngModelOptions]="{standalone: true}"
+                        (change)="onMemberCountChange()"
+                        ></mat-slider>
+                        <span fxFlex="10" class="text-small">25</span>
                     </div>
                 </div>
-                <div fxLayout="row" style="padding-left: 10px;padding-top: 10px;">
-                    <div fxLayout="col" fxFlex="50">
-                        <label>Duration in months: </label>
+                <div fxLayout="row" class="sliderrow">
+                    <div fxFlex="32" class="labelstyle">Duration in months</div>
+                    <div fxLayout="row" fxFlex="65">
+                        <span  fxFlex="8" class="text-small">6</span>
+                        <mat-slider 
+                        color="primary"
+                        max="60"
+                        min="6"
+                        step="6"
+                        thumbLabel="true"
+                        tickInterval="6"
+                        value="duration" 
+                        [(ngModel)] ="duration"
+                        [ngModelOptions]="{standalone: true}"
+                        (change)="onDurationChange()"
+                        ></mat-slider>
+                        <span fxFlex="10" class="text-small">60</span>
                     </div>
                 </div>
-                <div fxLayout="row" style="padding-left: 10px;padding-top: 10px;">
-                    <div fxLayout="col" fxFlex="50">
-                        <label>Monthly Contribution: </label>
+                <div fxLayout="row" class="sliderrow">
+                    <div fxFlex="32" class="labelstyle">Monthly Contribution</div>
+                    <div fxLayout="row" fxFlex="65">
+                        <span fxFlex="8" class="text-small">$10</span>
+                        <mat-slider 
+                        color="primary"
+                        max="1500"
+                        min="10"
+                        step="10"
+                        thumbLabel="true"
+                        tickInterval="10"
+                        value="community.savings"
+                        [(ngModel)] ="community.savings"
+                        [ngModelOptions]="{standalone: true}"
+                        (change)="onSavingsChange()"
+                        ></mat-slider>
+                        <span fxFlex="10" class="text-small">$1500</span>
                     </div>
-                </div>
-                <div fxLayout="row" style="padding-left: 10px;padding-top: 10px;">
-                    <div fxLayout="col" fxFlex="30">
-                        <label>Start date: </label>
-                    </div>
-                    <div fxLayout="col" style="width: 150px;height: 100px;">
-                        <mat-calendar></mat-calendar>
-                        <!-- <mat-card class="demo-inline-calendar-card">
+                </div>              
+                <div fxLayout="row" >
+                    <div fxFlex="32" class="labelstyle datelabel">Start date</div>                   
+                    <div fxFlex="65">                      
+                       <mat-calendar [(selected)]="selected"></mat-calendar>                         
+                       <!-- <mat-calendar></mat-calendar>
+                         <mat-card class="demo-inline-calendar-card">
                             <mat-calendar></mat-calendar>
                         </mat-card> -->
                     </div>
@@ -94,34 +155,63 @@
        
         
     </div> 
-    <div fxFlex="25" fxLayout="col" class="rightdiv">
-        <label style="padding-left: 20px;">Projected data</label>
-        <div fxLayout="row" style="padding-top: 20px;padding-left: 20px;">
-            <div fxLayout="col">
-                <div fxLayout="row">
-                    <div fxLayout="col" style="width: 50px;height: 50px;background-color: blueviolet;">
-                      
-                    </div>
-                    <div fxLayout="col" style="width: 50px;height: 50px;background-color: blueviolet;padding-left: 10px;" >
-
-                    </div>
-                </div>
+    <div fxFlex="25" fxLayout="column" class="rightdiv">
+        <div class="titlediv">Projected data</div>
+        <div fxLayout="row">
+            <div fxFlex="45" class="box box1">
+                <div fxLayout="row" class="header">                    
+                    <mat-icon >savings</mat-icon>
+                    <div>${{lotamount}}</div>     
+                </div>           
+                <div class="valuebox">Lot Amount</div>
+            </div>
+            <div fxFlex="45" class="box box2">
+                <div fxLayout="row" class="header">                    
+                    <mat-icon >timer</mat-icon>
+                    <div>{{lotFrequency}}</div>  
+                </div>           
+                <div class="valuebox valuewrap">Lot Frequency<br/> (in months)</div>
             </div>
         </div>
         <div fxLayout="row">
+            <div fxFlex="45" class="box box1">
+                <div fxLayout="row" class="header">                    
+                    <mat-icon >payment</mat-icon>
+                    <div>{{loancount}}</div>     
+                </div>           
+                <div class="valuebox">Max number of loans</div>
+            </div>
+            <div fxFlex="45" class="box box2">
+                <div fxLayout="row" class="header">                    
+                    <mat-icon >attach_money</mat-icon>
+                    <div>{{maxLoan}}</div>  
+                </div>           
+                <div class="valuebox valuewrap">Max loan amount<br/>per member</div>
+            </div>
+        </div>
+        <div fxLayout="row">
+            <div fxFlex="45" class="box box1">
+                <div fxLayout="row" class="header">                    
+                    <mat-icon >paid</mat-icon>
+                    <div>6</div>     
+                </div>           
+                <div class="valuebox">Savings interest</div>
+            </div>
+            <div fxFlex="45" class="box box2">
+                <div fxLayout="row" class="header">                    
+                    <mat-icon >account_balance</mat-icon>
+                    <div>6</div>  
+                </div>           
+                <div class="valuebox">Loan interest</div>
+            </div>
+        </div>
+        <div class="leafdiv">
             <img src="assets/Leaf.png">
         </div>
-        <div fxLayout="row">
-            <div fxLayout="col">
-               + Submit
-            </div>
-            <div fxLayout="col">
-                cancel
-            </div>
+        <div fxLayout="row" class="buttondiv">                   
+            <div fxFlex="50" class="submitbtn" (click)="submit()"><mat-icon>add_circle</mat-icon>Submit </div>
+            <div fxFlex="50" class="cancelbtn" (click)="cancel()"><mat-icon>cancel</mat-icon>Cancel </div>
         </div>
-       
-        
-
     </div>
 </div>
     

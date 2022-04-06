@@ -36,4 +36,16 @@ export class FincommService {
   public getActivities(): Observable<any>{
     return this.apiService.get('activities');
   }
+
+  public uploadCommunityPicture(payload:any):Observable<any>{
+    return this.apiService.uploadFile('uploadPicture', payload);
+  }
+
+  public communityImageBaseUrl(){
+    return this.apiService.imagebaseurl + 'communitylogos/';
+  }
+
+  public userImgeBaseUrl(){
+    return this.apiService.imagebaseurl + 'users/';
+  }
 }
