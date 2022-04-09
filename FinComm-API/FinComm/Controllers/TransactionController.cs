@@ -19,8 +19,8 @@ namespace FinComm.Controllers
             {
                 var web3 = new Web3("HTTP://127.0.0.1:7545");
 
-                var senderAddress = "0x881f4022F61012Ea5FE728eE2ADFe69A7bdAAAE8"; // put actual sender address
-                var receiveAddress = "0xf524b8ef813fe667843EA8EB3513570df02A157B"; //put actual receiver address
+                var senderAddress = "0xc5951B31f031767b2cc6CAf9877cd67BFaa18A97"; // put actual sender address
+                var receiveAddress = "0x48Fd3b652A642EF5ac6614340E8d4534CD90963F"; //put actual receiver address
 
                 var txCount = await web3.Eth.Transactions.GetTransactionCount.SendRequestAsync(senderAddress);
 

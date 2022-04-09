@@ -128,7 +128,7 @@ export class AddcommunityComponent implements OnInit {
   public calculateData(){
     this.lotamount = this.community.membercount * this.community.savings;
     this.lotFrequency = this.duration/this.community.membercount;
-    this.loancount = this.community.membercount/1.5;
+    this.loancount = Math.floor(this.community.membercount/1.5);
     this.maxLoan = this.community.membercount * this.community.savings;
   }
 }
